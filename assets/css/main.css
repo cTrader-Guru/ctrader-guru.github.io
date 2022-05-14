@@ -1,0 +1,30 @@
+#top-container {
+    padding: 5rem 0rem 0rem 0rem!important;
+}
+
+img.main-logo {
+    width: 15rem !important;
+    height: 15rem !important;
+}
+
+#setup-container .ui.equal.grid {
+    max-width: 100%!important;
+}
+
+#setup-container .ui.equal.grid .column {
+    padding: 2.5rem!important;
+}
+
+#setup-container .column.version {
+    color: rgb(201, 201, 201)!important;
+}
+
+#shop-container {
+    padding: 5rem 0rem 5rem 0rem!important;
+}
+
+#shop-container .ui.tab.segment {
+    border: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}

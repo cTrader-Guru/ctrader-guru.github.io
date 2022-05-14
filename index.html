@@ -10,14 +10,65 @@
 
     <!-- Site Properities -->
     <title>cTrader Guru | Code Center</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Fomantic and Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 
 </head>
 
 <body>
 
-    <p>coming-soon...</p>
+    <div id="setup-container" class="ui row center aligned">
 
+        <div class="ui equal width grid">
+            <div class="column left aligned version">
+                <em>v.1.0</em>
+            </div>
+            <div class="column right aligned">
+                <i class="ellipsis vertical icon link"></i>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="top-container" class="ui text container center aligned">
+
+        <img class="ui centered medium image main-logo" src="/assets/images/cTrader-Guru-Logo.png">
+        <h1 class="ui header">
+            <div class="content">
+                cTrader Guru
+                <div class="ui sub header">
+                    Trading Specialist
+                </div>
+            </div>
+        </h1>
+
+    </div>
+    <div id="shop-container" class="ui text container center aligned">
+
+        <div class="ui pointing secondary menu">
+            <a class="item" data-tab="first">First</a>
+            <a class="item" data-tab="second">Second</a>
+            <a class="item active" data-tab="third">Third</a>
+        </div>
+        <div class="ui tab segment active" data-tab="first">
+            <span>1</span>
+        </div>
+        <div class="ui tab segment" data-tab="second">
+            <span>2</span>
+        </div>
+        <div class="ui tab segment" data-tab="third">
+            <span>3</span>
+        </div>
+
+    </div>
+
+    <!-- Fomantic and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+    <script src="/assets/library/main.js"></script>
 </body>
 
 </html>
