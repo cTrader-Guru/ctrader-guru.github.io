@@ -3,15 +3,18 @@
 
     "use strict";
 
-    $('#shop-container .menu .item').tab()
+    $('#shop-container .menu .item')
         .tab({
 
-            evaluateScripts: 'once',
+            cache: true,
+            evaluateScripts: true,
             context: 'parent',
             auto: true,
             path: '/assets/frames/'
 
         });
+
+    $('[data-tab="indicators"]').trigger('click');
 
     $('.open-main-menu').click(function() {
 
@@ -22,12 +25,5 @@
             .modal('show');
 
     });
-
-    $('.faq.accordion')
-        .accordion({
-            selector: {
-                trigger: '.title'
-            }
-        });
 
 })(jQuery);
