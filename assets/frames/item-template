@@ -1,0 +1,15 @@
+<div class="item" data-repo="name-github-repo">
+    <div class="image">
+        <img src="">
+    </div>
+    <div class="content">
+        <a class="header"><!-- Name --></a>
+
+        <div class="description">
+            <!-- <p>Short description</p> -->
+        </div>
+        <div class="extra">
+            <!-- <a class="ui label mini">New</a> -->
+        </div>
+    </div>
+</div>

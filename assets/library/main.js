@@ -1,15 +1,17 @@
-(function() {
+(function($) {
+
+
+    "use strict";
 
     $('#shop-container .menu .item').tab()
-        /*.tab({
+        .tab({
 
-                evaluateScripts: 'once',
-                context: 'parent',
-                auto: true,
-                path: '/assets/frames/'
+            evaluateScripts: 'once',
+            context: 'parent',
+            auto: true,
+            path: '/assets/frames/'
 
-            })*/
-    ;
+        });
 
     $('.open-main-menu').click(function() {
 
@@ -28,4 +30,4 @@
             }
         });
 
-})();
+})(jQuery);
