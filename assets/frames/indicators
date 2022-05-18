@@ -1,5 +1,5 @@
-<div id="shop-items" class="ui unstackable items">
-    <h5 class="ui force text center">Not only indicators but also tools used as indicators, we only develop original tools</h5>
+<div id="indicators-items" class="ui unstackable items description product">
+    <h5 class="ui force text center">Not only indicators but also tools used as indicators</h5>
 </div>
 
 <script>
@@ -14,7 +14,7 @@
 
         ];
 
-        CG.LoadRepos(GITHUB_REPOS);
+        CG.LoadRepos(GITHUB_REPOS, "indicators");
 
     })(jQuery);
 </script>

@@ -34,10 +34,11 @@ img.main-logo {
 
 #version {
     color: rgb(201, 201, 201)!important;
+    font-size: 12px!important;
 }
 
 #shop-container {
-    padding: 5rem 0rem 5rem 0rem!important;
+    padding: 5rem 0rem 0rem 0rem!important;
     min-height: 400px!important;
 }
 
@@ -56,7 +57,7 @@ img.main-logo {
     margin-top: 5rem!important;
 }
 
-.items .description {
+.description.product.items .description {
     overflow: hidden!important;
     text-overflow: ellipsis!important;
     display: -webkit-box!important;
@@ -66,8 +67,8 @@ img.main-logo {
     -webkit-box-orient: vertical!important;
 }
 
-.items .extra,
-.items .header {
+.description.product.items .extra,
+.description.product.items .header {
     overflow: hidden!important;
     text-overflow: ellipsis!important;
     display: -webkit-box!important;
@@ -99,10 +100,64 @@ img.main-logo {
     border: none!important;
 }
 
-#shop-items .ui.text {
+.description.product .ui.text {
     margin-bottom: 3rem!important;
 }
 
 .force.text.center {
     text-align: center!important;
+}
+
+#signals-items .icon.our.singlas {
+    margin-left: 1rem!important;
+}
+
+#signals-items .animated.button {
+    width: 10rem!important;
+}
+
+#signals-items .placeholder {
+    border: none!important;
+    background: transparent!important;
+}
+
+#signals-items {
+    padding: 3rem 0rem 0rem 0rem!important;
+    /*  
+    background-image: url("/assets/images/signal.svg")!important;
+    background-repeat: no-repeat!important;
+    background-size: 15rem!important;
+    background-position-x: left;
+    background-position-y: bottom!important;
+*/
+}
+
+#footer-container {
+    min-height: 3rem!important;
+    padding: 3rem 0rem 3rem 0rem!important;
+}
+
+#revue-embed {
+    max-width: 20rem!important;
+}
+
+#signals-items .ui.divider {
+    margin: 3rem 0rem 3rem 0rem!important;
+}
+
+#signals-items a.button {
+    margin-bottom: 3rem!important;
+}
+
+#signals-items .header.intesta {
+    margin-bottom: 3rem!important;
+}
+
+#footer-container .footerized {
+    font-weight: bold!important;
+}
+
+.ui.mini.label,
+.ui.mini.labels .label {
+    font-size: .759999rem!important;
 }

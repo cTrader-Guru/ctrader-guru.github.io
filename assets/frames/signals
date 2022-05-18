@@ -1,0 +1,69 @@
+<div id="signals-items" class="ui unstackable items">
+
+    <div class="ui placeholder segment signals">
+        <div class="ui two column very relaxed stackable grid">
+            <div class="center aligned column">
+                <h3 class="ui icon header intesta">
+                    <i class="rss icon"></i>
+                    <div class="content">
+                        Signal and Analysis
+                        <div class="sub header">Realtime service</div>
+                    </div>
+                </h3>
+                <a href="https://twitter.com/search?q=(%23Signal)%20(from%3AcTraderGuru)&src=saved_search_click&f=live" alt="Twitter signal" class="ui animated medium button blue" tabindex="0">
+                    <div class="visible content">
+                        Twitter
+                        <i class="twitter medium icon our singlas"></i>
+                    </div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </a>
+
+                <a href="https://t.me/cTrader_Guru_Signal_And_Analysis" alt="Telegram channel" class="ui animated medium button teal" tabindex="0">
+                    <div class="visible content">
+                        Telegram
+                        <i class="telegram medium icon our singlas"></i>
+                    </div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="center aligned column">
+                <h3 class="ui icon header intesta">
+                    <i class="envelope outline icon"></i>
+                    <div class="content">
+                        Newsletters
+                        <div class="sub header">Only relevant updates</div>
+                    </div>
+                </h3>
+                <div class="ui centered grid">
+                    <div id="revue-embed" class="column">
+                        <form class="ui form" action="https://www.getrevue.co/profile/cTraderGuru/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+                            <div class="revue-form-group field">
+                                <label for="member_email">Email address</label>
+                                <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+                            </div>
+                            <div class="revue-form-group field">
+                                <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+                                <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
+                            </div>
+                            <div class="revue-form-group field">
+                                <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
+                                <input class="revue-form-field" placeholder="Last name... (Optional)" type="text" name="member[last_name]" id="member_last_name">
+                            </div>
+                            <div class="revue-form-actions field">
+                                <input class="ui orange button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                            </div>
+                            <div class="revue-form-footer ui text">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

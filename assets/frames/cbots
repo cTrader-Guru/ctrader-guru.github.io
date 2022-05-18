@@ -1,0 +1,20 @@
+<div id="cbots-items" class="ui unstackable items description product">
+    <h5 class="ui force text center">A collection of interesting projects developed by the entire community</h5>
+</div>
+
+<script>
+    (($) => {
+
+        "use strict";
+
+        const GITHUB_REPOS = [
+
+            "box-info",
+            "trendline-power"
+
+        ];
+
+        CG.LoadRepos(GITHUB_REPOS, "cbots");
+
+    })(jQuery);
+</script>

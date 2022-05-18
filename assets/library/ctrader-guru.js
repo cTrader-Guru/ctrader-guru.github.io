@@ -40,9 +40,9 @@
             });
 
         },
-        LoadRepos: (GITHUB_REPOS, item_template = "/assets/frames/item-template", item_config = "/repositories/{repo_name}/config.json") => {
+        LoadRepos: (GITHUB_REPOS, tabname, item_template = "/assets/frames/item-template", item_config = "/repositories/{repo_name}/config.json") => {
 
-            var $shop_items = $("#shop-items");
+            var $shop_items = $("#" + tabname + "-items");
 
             CG.LoadTemplate(item_template, (template) => {
 
