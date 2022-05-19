@@ -1,4 +1,23 @@
-/* start of desktop styles */
+/* Firefox */
+
+* {
+    scrollbar-color: rgb(197, 197, 197) white!important;
+    scrollbar-width: thin!important;
+}
+
+
+/* WebKit and Chromiums */
+
+ ::-webkit-scrollbar {
+    width: 8px!important;
+    height: 8px!important;
+    background-color: white!important;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197)!important;
+    border-radius: 0px!important;
+}
 
 @media (max-width: 991px) {
     /* start of large tablet styles */
@@ -6,6 +25,10 @@
 
 @media (max-width: 767px) {
     /* start of medium tablet styles */
+    .ui.ui.ui.container:not(.fluid) {
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
 }
 
 @media (max-width: 539px) {
@@ -134,7 +157,7 @@ img.main-logo {
 
 #footer-container {
     min-height: 3rem!important;
-    padding: 3rem 0rem 3rem 0rem!important;
+    padding: 5rem 0rem 3rem 0rem!important;
 }
 
 #revue-embed {
@@ -155,9 +178,61 @@ img.main-logo {
 
 #footer-container .footerized a {
     font-weight: bold!important;
+    font-size: 14px!important;
 }
 
 .ui.mini.label,
 .ui.mini.labels .label {
     font-size: .759999rem!important;
+}
+
+.nomobile.slotty em {
+    font-size: 12px!important;
+}
+
+.items.description.product {
+    max-height: 500px!important;
+    overflow-y: auto!important;
+    overflow-x: hidden!important;
+}
+
+.items.description.product div.fixedtop {
+    position: absolute!important;
+    background: white!important;
+    z-index: 3!important;
+    width: 100%!important;
+    left: 0px !important;
+}
+
+.items.description.product>.divider.hidden {
+    height: 7rem!important;
+}
+
+.ui.text.container {
+    max-width: 800px!important;
+}
+
+.ui.button.become {
+    margin: 3rem 1rem 0rem 1rem!important;
+}
+
+#shop-container .tab {
+    min-height: 400px!important;
+}
+
+.items.description.product .ui.search {
+    margin: 2rem 1rem 3rem 1rem!important;
+}
+
+.items.description.product .icon.input.ui {
+    width: 70%!important;
+}
+
+.items.description.product .item .image img {
+    cursor: pointer!important;
+    border: 1px solid transparent;
+}
+
+.items.description.product .item .image img:hover {
+    border: 1px solid rgb(219, 217, 217)!important;
 }

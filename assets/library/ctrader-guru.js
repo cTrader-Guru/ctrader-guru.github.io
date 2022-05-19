@@ -40,20 +40,27 @@
             });
 
         },
-        LoadRepos: (GITHUB_REPOS, tabname, item_template = "/assets/frames/item-template", item_config = "/repositories/{repo_name}/config.json") => {
+        LoadRepos: (GITHUB_REPOS, tabname, onLoaded, item_path = "/repositories/{folder}/{repo_name}/", item_template = "/assets/frames/item-template") => {
 
             var $shop_items = $("#" + tabname + "-items");
 
             CG.LoadTemplate(item_template, (template) => {
 
+                var count = 0;
+
                 GITHUB_REPOS.forEach(repo => {
 
-                    CG.LoadConfig(item_config.replace(/\{repo_name\}/g, repo), (config) => {
+                    var path = item_path.replace(/\{folder\}/g, tabname).replace(/\{repo_name\}/g, repo);
+                    var item_config = path + "config.json";
+
+                    CG.LoadConfig(item_config, (config) => {
 
                         let $tmp = $(template).clone();
 
+                        var item_image = path + config.img_3d_box;
+
                         $tmp.attr("data-repo", config.unique);
-                        $tmp.find(".image img").attr("src", config.img_3d_box);
+                        $tmp.find(".image img").attr("src", item_image);
                         $tmp.find(".content .header").html(config.name);
                         $tmp.find(".content .description").html("<p>" + config.short_description + "</p>");
 
@@ -66,6 +73,9 @@
                         });
 
                         $shop_items.append($tmp);
+                        count++;
+
+                        if (count == GITHUB_REPOS.length) onLoaded(true);
 
                     }, (jqXHR, textStatus, errorThrown) => {
 
@@ -77,6 +87,7 @@
 
             }, (jqXHR, textStatus, errorThrown) => {
 
+                onLoaded(false);
                 console.log("Load template : " + errorThrown);
 
             });

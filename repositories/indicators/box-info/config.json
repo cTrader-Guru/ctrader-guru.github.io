@@ -1,0 +1,9 @@
+{
+
+    "unique": "box-info",
+    "name": "Box Info",
+    "short_description": "This is a short description of this repo",
+    "tags": ["new", "power", "abstract"],
+    "img_3d_box": "3d-box.png"
+
+}

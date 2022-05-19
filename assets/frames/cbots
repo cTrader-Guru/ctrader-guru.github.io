@@ -1,20 +1,74 @@
-<div id="cbots-items" class="ui unstackable items description product">
-    <h5 class="ui force text center">A collection of interesting projects developed by the entire community</h5>
+<div id="---" class="ui unstackable items description product">
+    <div class="ui text container center aligned fixedtop">
+        <div class="ui search">
+            <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Search indicators, type minimum 3 chars">
+                <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
+    </div>
+    <div class="ui hidden divider"></div>
 </div>
-
 <script>
-    (($) => {
+    (($, MAIN, TAB) => {
 
         "use strict";
 
-        const GITHUB_REPOS = [
+        // --> I edit the placeholder to start editing
+        $("#---").attr("id", MAIN);
 
-            "box-info",
-            "trendline-power"
+        const
+            SEARCH = '#' + MAIN + ' input.prompt',
+            ITEMS = '#' + MAIN + ' .item[data-repo]',
+            LOADING = '#' + MAIN + ' div.ui.search',
+            GITHUB_REPOS = [
 
-        ];
+                "trendline-power"
 
-        CG.LoadRepos(GITHUB_REPOS, "cbots");
+            ];
 
-    })(jQuery);
+        // --> Initialising the search function
+        $(SEARCH).bind('keyup', function(e) {
+
+            let myvalue = this.value.trim();
+
+            if (!$(LOADING).hasClass("loading")) $(LOADING).addClass("loading");
+
+            if (myvalue.length < 3) {
+
+                $(ITEMS).show();
+
+            } else {
+
+                $(ITEMS).hide();
+                $(ITEMS + " .header:contains('" + myvalue + "')").closest(".item[data-repo]").show();
+                $(ITEMS + " .description:contains('" + myvalue + "')").closest(".item[data-repo]").show();
+                $(ITEMS + " .extra:contains('" + myvalue + "')").closest(".item[data-repo]").show();
+
+            }
+
+            setTimeout(() => {
+                $(LOADING).removeClass("loading");
+            }, 300);
+
+            e.preventDefault();
+
+        });
+
+        // --> Adding all available repositories
+        CG.LoadRepos(GITHUB_REPOS, TAB, (success) => {
+
+            if (!success) return;
+
+            $(ITEMS + " .extra .ui.label").bind("click", function() {
+
+                $(SEARCH).val($(this).html());
+                $(SEARCH).trigger('keyup');
+
+            });
+
+        });
+
+    })(jQuery, "cbots-items", "cbots");
 </script>
