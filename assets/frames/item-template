@@ -1,9 +1,9 @@
 <div class="item" data-repo="name-github-repo">
-    <div class="image link">
-        <img src="">
+    <div class="image">
+        <img src="" loading="lazy" class="open details">
     </div>
     <div class="content">
-        <a class="header">
+        <a class="header open details">
             <!-- Name -->
         </a>
 

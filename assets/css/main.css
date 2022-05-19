@@ -71,11 +71,13 @@ img.main-logo {
     box-shadow: none!important;
 }
 
+#product-details,
 #main-menu {
     width: 100%!important;
     height: 100%!important;
 }
 
+#product-details .scrolling.content,
 #main-menu .scrolling.content {
     margin-top: 5rem!important;
 }
@@ -176,8 +178,12 @@ img.main-logo {
     margin-bottom: 3rem!important;
 }
 
+.footerized {
+    color: #cfcfcf !important;
+}
+
 #footer-container .footerized a {
-    font-weight: bold!important;
+    /*font-weight: bold!important;*/
     font-size: 14px!important;
 }
 
@@ -235,4 +241,9 @@ img.main-logo {
 
 .items.description.product .item .image img:hover {
     border: 1px solid rgb(219, 217, 217)!important;
+    background: #e7e7e7!important;
+}
+
+#top-container a.become i.icon {
+    margin-right: .8rem!important;
 }

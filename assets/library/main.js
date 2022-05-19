@@ -3,6 +3,8 @@
 
     "use strict";
 
+    $("#version").html(CG.Version);
+
     $('#shop-container .menu .item')
         .tab({
 
