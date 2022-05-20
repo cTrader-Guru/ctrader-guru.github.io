@@ -1,9 +1,9 @@
-<div id="---" class="ui unstackable items description product">
+<div id="cbots-items" class="ui unstackable items description product">
     <div class="ui text container center aligned fixedtop">
         <div class="ui search">
             <div class="ui icon input">
-                <input class="prompt" type="text" placeholder="Search indicators, type minimum 3 chars">
-                <i class="search icon"></i>
+                <input class="prompt" type="text" placeholder="Search cbots, type minimum 3 chars">
+                <i class="times icon link cleanall" style="display: none;"></i>
             </div>
             <div class="results"></div>
         </div>
@@ -11,78 +11,19 @@
     <div class="ui hidden divider"></div>
 </div>
 <script>
-    (($, MAIN, TAB) => {
-
-        "use strict";
-
-        // --> I edit the placeholder to start editing
-        $("#---").attr("id", MAIN);
+    (() => {
 
         const
-            SEARCH = '#' + MAIN + ' input.prompt',
-            ITEMS = '#' + MAIN + ' .item[data-repo]',
-            LOADING = '#' + MAIN + ' div.ui.search',
+            MAIN = 'cbots-items',
+            TAB = 'cbots',
             GITHUB_REPOS = [
 
                 "trendline-power"
 
             ];
 
-        // --> Initialising the search function
-        $(SEARCH).bind('keyup', function(e) {
 
-            let myvalue = this.value.trim();
+        window.CG.Populate(MAIN, TAB, GITHUB_REPOS);
 
-            if (!$(LOADING).hasClass("loading")) $(LOADING).addClass("loading");
-
-            if (myvalue.length < 3) {
-
-                $(ITEMS).show();
-
-            } else {
-
-                $(ITEMS).hide();
-                $(ITEMS + " .header:contains('" + myvalue + "')").closest(".item[data-repo]").show();
-                $(ITEMS + " .description:contains('" + myvalue + "')").closest(".item[data-repo]").show();
-                $(ITEMS + " .extra:contains('" + myvalue + "')").closest(".item[data-repo]").show();
-
-            }
-
-            setTimeout(() => {
-                $(LOADING).removeClass("loading");
-            }, 300);
-
-            e.preventDefault();
-
-        });
-
-        // --> Adding all available repositories
-        CG.LoadRepos(GITHUB_REPOS, TAB, (success) => {
-
-            if (!success) return;
-
-            // --> Hashtags
-            $(ITEMS + " .extra .ui.label").bind("click", function() {
-
-                $(SEARCH).val($(this).html());
-                $(SEARCH).trigger('keyup');
-
-            });
-
-            // --> Modal Details
-            $(ITEMS + " .open.details").click(function() {
-
-                $('#product-details p').html($(this).closest(".item").attr("data-repo"));
-
-                $('#product-details')
-                    .modal({
-                        closeIcon: true
-                    })
-                    .modal('show');
-
-            });
-
-        });
-
-    })(jQuery, "cbots-items", "cbots");
+    })();
 </script>

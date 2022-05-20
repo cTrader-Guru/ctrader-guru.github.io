@@ -33,6 +33,9 @@
 
 @media (max-width: 539px) {
     /* start of phone styles 479 */
+    .ui.search.category .category .name {
+        display: none!important;
+    }
     #setup-container .nomobile {
         display: none!important;
     }
@@ -226,10 +229,6 @@ img.main-logo {
     min-height: 400px!important;
 }
 
-.items.description.product .ui.search {
-    margin: 2rem 1rem 3rem 1rem!important;
-}
-
 .items.description.product .icon.input.ui {
     width: 70%!important;
 }
@@ -246,4 +245,31 @@ img.main-logo {
 
 #top-container a.become i.icon {
     margin-right: .8rem!important;
+}
+
+.ui.search.category .category .name {
+    white-space: inherit!important;
+    word-break: break-word!important;
+    width: 30%!important;
+}
+
+.ui.search.category .category .results {
+    white-space: inherit!important;
+    word-break: break-word!important;
+    width: 70%!important;
+}
+
+.ui.category.search .results {
+    width: 80%!important;
+    left: 0!important;
+    right: 0!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.hidden.data {
+    width: 0px!important;
+    height: 0px!important;
+    display: none!important;
+    visibility: hidden!important;
 }

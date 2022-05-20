@@ -16,7 +16,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.023",
+        Version: "1.024",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -47,7 +47,9 @@
 
             CG.LoadTemplate(item_template, (template) => {
 
-                var count = 0;
+                var
+                    count = 0,
+                    search_list = [];
 
                 GITHUB_REPOS.forEach(repo => {
 
@@ -56,9 +58,18 @@
 
                     CG.LoadConfig(item_config, (config) => {
 
-                        let $tmp = $(template).clone();
+                        let
+                            $tmp = $(template).clone(),
+                            item_image = path + config.img_3d_box,
+                            new_record = {
 
-                        var item_image = path + config.img_3d_box;
+                                unique: config.unique,
+                                category: config.tags.join(", "),
+                                tags: config.tags,
+                                name: config.name,
+                                short_description: config.short_description
+
+                            };
 
                         $tmp.attr("data-repo", config.unique);
                         $tmp.find(".image img").attr("src", item_image);
@@ -74,9 +85,11 @@
                         });
 
                         $shop_items.append($tmp);
+
+                        search_list.push(new_record);
                         count++;
 
-                        if (count == GITHUB_REPOS.length) onLoaded(true);
+                        if (count == GITHUB_REPOS.length) onLoaded(search_list);
 
                     }, (jqXHR, textStatus, errorThrown) => {
 
@@ -88,7 +101,7 @@
 
             }, (jqXHR, textStatus, errorThrown) => {
 
-                onLoaded(false);
+                onLoaded([]);
                 console.log("Load template : " + errorThrown);
 
             });

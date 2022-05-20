@@ -3,9 +3,9 @@
         <img src="" loading="lazy" class="open details">
     </div>
     <div class="content">
-        <a class="header open details">
+        <div class="header">
             <!-- Name -->
-        </a>
+        </div>
 
         <div class="description">
             <!-- <p>Short description</p> -->
