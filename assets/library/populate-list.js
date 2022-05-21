@@ -12,9 +12,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
     const
         queryString = window.location.search,
         urlParams = new URLSearchParams(queryString),
-        repo = urlParams.get('repo');
+        repo = urlParams.get('repository'),
+        cat = urlParams.get('category');
 
-    if (repo && repo.length > 0) _openProductDetails(repo);
+    if (repo && repo.length > 0 && cat && cat.length > 0) _openProductDetails(repo, cat);
 
     /*// --> Initialising the search function */
     $(SEARCH).on('keyup', function(e) {
@@ -88,7 +89,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         // --> Modal Details events
         $(ITEMS + " .open.details").click(function() {
 
-            _openProductDetails($(this).closest(".item").attr("data-repo"));
+            _openProductDetails($(this).closest(".item").attr("data-repo"), $(this).closest(".item").attr("data-cat"));
 
         });
 
@@ -109,7 +110,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                 ],
                 onSelect: (result, response) => {
 
-                    _openProductDetails(result.unique);
+                    _openProductDetails(result.unique, result.tabname);
 
                     return false;
 
@@ -132,7 +133,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
     };
 
-    function _openProductDetails(unique) {
+    function _openProductDetails(unique, tabname) {
 
         $('#product-details .container.content').hide();
         $('#product-details .main.loader.active').show();
@@ -143,24 +144,49 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                 closeIcon: true,
                 onVisible: () => {
 
-                    window.history.pushState({}, "", "?repo=" + unique);
+                    window.history.pushState({}, "", "?repository=" + unique + "&category=" + tabname);
 
-                    $('#sJZ3vntth')
-                        .accordion({
-                            selector: {
-                                trigger: '.title'
-                            }
+                    // --> LoadConfig data
+                    CG.LoadRepos([unique], tabname, (success) => {
+
+                        if (!success || success.length < 1)
+                            return;
+
+                        $('#product-details .3d.box').attr("src", success[0].image_box);
+                        $('#product-details .repo.name').text(success[0].name);
+                        $('#product-details .short.description').html(success[0].short_description);
+                        $('#product-details .images.list').html("");
+                        success[0].screenshots.forEach(src => {
+
+                            $('<a>', {
+                                href: success[0].path + src,
+                                target: '_blank',
+                                class: 'ui small image',
+                                "data-lightbox": "light"
+                            }).append($('<img>', {
+                                src: success[0].path + src
+                            })).appendTo('#product-details .images.list');
+
                         });
 
-                    setTimeout(() => {
-                        $('#product-details .container.content').show();
-                        $('#product-details .main.loader.active').hide();
-                    }, 100);
+                        $('#sJZ3vntth')
+                            .accordion({
+                                selector: {
+                                    trigger: '.title'
+                                }
+                            });
+
+                        setTimeout(() => {
+                            $('#product-details .container.content').show();
+                            $('#product-details .main.loader.active').hide();
+                        }, 100);
+
+                    });
 
                 },
                 onHidden: () => {
 
-                    window.history.back();
+                    window.history.pushState({}, "", "/");
 
                 }
 

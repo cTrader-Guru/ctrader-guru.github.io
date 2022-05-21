@@ -16,7 +16,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.025",
+        Version: "1.027",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -64,27 +64,38 @@
                             new_record = {
 
                                 unique: config.unique,
+                                tabname: tabname,
                                 category: config.tags.join(", "),
                                 tags: config.tags,
                                 name: config.name,
-                                short_description: config.short_description
+                                image_box: item_image,
+                                short_description: config.short_description,
+                                screenshots: config.screenshots || [],
+                                path: path
 
                             };
 
-                        $tmp.attr("data-repo", config.unique);
-                        $tmp.find(".image img").attr("src", item_image);
-                        $tmp.find(".content .header").html(config.name);
-                        $tmp.find(".content .description").html("<p>" + config.short_description + "</p>");
+                        if ($shop_items.find("[data-repo='" + config.unique + "'][data-cat='" + tabname + "']").length == 0) {
 
-                        let $tags = $tmp.find(".content .extra");
+                            $tmp.attr("data-repo", config.unique);
+                            $tmp.attr("data-cat", tabname);
+                            $tmp.find(".image img").attr("src", item_image);
+                            $tmp.find(".content .header").html(config.name);
+                            $tmp.find(".content .description").html("<p>" + config.short_description + "</p>");
 
-                        config.tags.forEach(tag => {
+                            let $tags = $tmp.find(".content .extra");
 
-                            $tags.append("<a class=\"ui label mini\">" + tag + "</a>");
+                            config.tags.forEach(tag => {
 
-                        });
+                                $tags.append("<a class=\"ui label mini\">" + tag + "</a>");
 
-                        $shop_items.append($tmp);
+                            });
+
+                            $shop_items.append($tmp);
+
+                        }
+
+
 
                         search_list.push(new_record);
                         count++;
