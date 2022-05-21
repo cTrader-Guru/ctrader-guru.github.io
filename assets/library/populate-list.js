@@ -8,6 +8,14 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         ITEMS = MAIN + ' .item[data-repo]',
         LOADING = MAIN + ' div.ui.search'
 
+    // --> Search params to open request product
+    const
+        queryString = window.location.search,
+        urlParams = new URLSearchParams(queryString),
+        repo = urlParams.get('repo');
+
+    if (repo && repo.length > 0) _openProductDetails(repo);
+
     /*// --> Initialising the search function */
     $(SEARCH).on('keyup', function(e) {
 
@@ -80,13 +88,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         // --> Modal Details events
         $(ITEMS + " .open.details").click(function() {
 
-            $('#product-details p').html($(this).closest(".item").attr("data-repo"));
-
-            $('#product-details')
-                .modal({
-                    closeIcon: true
-                })
-                .modal('show');
+            _openProductDetails($(this).closest(".item").attr("data-repo"));
 
         });
 
@@ -107,13 +109,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                 ],
                 onSelect: (result, response) => {
 
-                    $('#product-details p').html(result.unique);
-
-                    $('#product-details')
-                        .modal({
-                            closeIcon: true
-                        })
-                        .modal('show');
+                    _openProductDetails(result.unique);
 
                     return false;
 
@@ -135,5 +131,42 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         }
 
     };
+
+    function _openProductDetails(unique) {
+
+        $('#product-details .container.content').hide();
+        $('#product-details .main.loader.active').show();
+
+        $('#product-details')
+            .modal({
+
+                closeIcon: true,
+                onVisible: () => {
+
+                    window.history.pushState({}, "", "?repo=" + unique);
+
+                    $('#sJZ3vntth')
+                        .accordion({
+                            selector: {
+                                trigger: '.title'
+                            }
+                        });
+
+                    setTimeout(() => {
+                        $('#product-details .container.content').show();
+                        $('#product-details .main.loader.active').hide();
+                    }, 100);
+
+                },
+                onHidden: () => {
+
+                    window.history.back();
+
+                }
+
+            })
+            .modal('show');
+
+    }
 
 };

@@ -80,6 +80,11 @@ img.main-logo {
     height: 100%!important;
 }
 
+#product-details {
+    overflow-x: hidden!important;
+    overflow-y: auto!important;
+}
+
 #product-details .scrolling.content,
 #main-menu .scrolling.content {
     margin-top: 5rem!important;
@@ -272,4 +277,32 @@ img.main-logo {
     height: 0px!important;
     display: none!important;
     visibility: hidden!important;
+}
+
+#product-details .column.description {
+    padding: 0rem 2rem 0rem 2rem!important;
+}
+
+#product-details .row.tags {
+    margin: 1rem 0rem 1rem 0rem!important;
+}
+
+#product-details .images img.image {
+    cursor: pointer!important;
+}
+
+#product-details .ui.text.version {
+    margin: 0rem 0rem 3rem 0rem!important;
+}
+
+#product-details .download.box {
+    margin: 0rem 0rem 3rem 0rem!important;
+}
+
+#product-details .download.box button {
+    margin: .5rem 0rem .5rem 0rem!important;
+}
+
+#product-details .comments {
+    margin: 3rem 0rem 1rem 0rem!important;
 }
