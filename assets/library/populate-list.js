@@ -6,7 +6,8 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
     const
         SEARCH = MAIN + ' input.prompt',
         ITEMS = MAIN + ' .item[data-repo]',
-        LOADING = MAIN + ' div.ui.search'
+        LOADING = MAIN + ' div.ui.search',
+        TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live"
 
     // --> Search params to open request product
     const
@@ -152,6 +153,8 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         if (!success || success.length < 1)
                             return;
 
+                        $('#product-details a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
+
                         $('#product-details .3d.box').attr("src", success[0].image_box);
                         $('#product-details .repo.name').text(success[0].name);
                         $('#product-details .short.description').html(success[0].short_description);
@@ -178,17 +181,58 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                         _installFBComments(queryString);
 
-                        $('#sJZ3vntth')
-                            .accordion({
-                                selector: {
-                                    trigger: '.title'
-                                }
+                        $('#sJZ3vntth').html('');
+
+                        if (success[0].params && success[0].params.length > 0) {
+
+                            success[0].params.forEach(param => {
+
+                                if (!param.title || !param.content) return;
+
+                                $("<div class='title'><i class='dropdown icon'></i>" + param.title + "</div>").appendTo('#sJZ3vntth');
+                                $("<div class='content'><p>" + param.content + "</p></div>").appendTo('#sJZ3vntth');
+
                             });
 
-                        setTimeout(() => {
-                            $('#product-details .container.content').show();
-                            $('#product-details .main.loader.active').hide();
-                        }, 100);
+                            $('#sJZ3vntth')
+                                .accordion({
+                                    selector: {
+                                        trigger: '.title'
+                                    }
+                                });
+
+                        } else {
+
+                            $("<span class='ui text'>There are no params for this tool</span>").appendTo("#sJZ3vntth");
+
+                        }
+
+                        $.ajax({
+                            url: "https://api.github.com/repos/cTrader-Guru/" + unique + "/releases/latest",
+                            cache: true,
+                            async: true,
+                            dataType: 'json',
+                            success: (data) => {
+
+                                if (!data) return;
+
+                                let
+                                    version = data.name || "",
+                                    relesed = data.published_at.split("T")[0] || "";
+
+                                $("#product-details .ui.version em").text("Version " + data.name + " (" + relesed.replace(/-/g, ".") + ")");
+                                $("#product-details .ui.version a").attr("href", TWITTER_CHANGELOG.replace("{hashname}", success[0].twitter_changelog));
+
+                                let downloadlink = data.zipball_url || "javascript:alert('Problems finding the download');";
+                                $('#product-details a.todownload').attr('href', downloadlink);
+
+                                setTimeout(() => {
+                                    $('#product-details .container.content').show();
+                                    $('#product-details .main.loader.active').hide();
+                                }, 100);
+
+                            }
+                        });
 
                     });
 

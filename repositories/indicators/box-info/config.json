@@ -5,5 +5,10 @@
     "short_description": "This is a short description of this repo and blablabl blalbabalb ah ah ahl alh alh alh alh alh alh alha lh alhahla",
     "tags": ["new", "power", "power", "abstract"],
     "img_3d_box": "3d-box.png",
-    "screenshots": ["1.jpg"]
+    "screenshots": ["1.jpg"],
+    "params": [{
+        "title": "ciupa",
+        "content": "bncvbncvbn"
+    }],
+    "twitter_changelog": "BoxInfo"
 }
