@@ -155,6 +155,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         $('#product-details .3d.box').attr("src", success[0].image_box);
                         $('#product-details .repo.name').text(success[0].name);
                         $('#product-details .short.description').html(success[0].short_description);
+
                         $('#product-details .images.list').html("");
                         success[0].screenshots.forEach(src => {
 
@@ -168,6 +169,14 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                             })).appendTo('#product-details .images.list');
 
                         });
+
+                        success[0].tags.forEach(tag => {
+
+                            $("<span class='ui label mini'>" + tag + "</span>").appendTo('#product-details .row.tags');
+
+                        });
+
+                        _installFBComments(queryString);
 
                         $('#sJZ3vntth')
                             .accordion({
@@ -192,6 +201,15 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
             })
             .modal('show');
+
+    }
+
+    function _installFBComments(queryString) {
+
+        $("#product-details .comments").html("");
+        $("<div id='fb-root'></div>").appendTo("#product-details .comments");
+        $("<script async defer crossorigin='anonymous' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0' nonce='rp16BmXP'></script>").appendTo("#product-details .comments");
+        $("<div class='fb-comments' data-href='https://ctrader-guru.github.io/" + queryString + "' data-width='100%' data-numposts='5' data-mobile='true'></div>").appendTo("#product-details .comments");
 
     }
 

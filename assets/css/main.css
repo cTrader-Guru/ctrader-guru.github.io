@@ -310,3 +310,7 @@ img.main-logo {
 #product-details .images.list {
     margin: 3rem 0rem 1rem 0rem!important;
 }
+
+.description.product .ui.input {
+    margin: 2rem 0rem 0rem 0rem!important;
+}
