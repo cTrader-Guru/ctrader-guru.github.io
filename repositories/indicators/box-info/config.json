@@ -2,13 +2,54 @@
 
     "unique": "box-info",
     "name": "Box Info",
-    "short_description": "This is a short description of this repo and blablabl blalbabalb ah ah ahl alh alh alh alh alh alh alha lh alhahla",
-    "tags": ["new", "power", "power", "abstract"],
+    "short_description": "Excellent utility for keeping profits and spreads under control at all times, to be used on any chart with any strategy, it is developed as an indicator so can be inserted and saved with any template.",
+    "tags": ["spread", "net profit", "antimartingala", "leverage", "drawdown"],
     "img_3d_box": "3d-box.png",
-    "screenshots": ["1.jpg"],
+    "screenshots": ["1.gif"],
     "params": [{
-        "title": "ciupa",
-        "content": "bncvbncvbn"
-    }],
+            "title": "Label (empty = all)",
+            "content": "Which label should monitor, if left blank monitors all labels"
+        },
+        {
+            "title": "Antimartingala K%",
+            "content": "The pyramidal multiplier for size calculation"
+        },
+        {
+            "title": "Panel type ?",
+            "content": "You can select the display between Banner or Box"
+        },
+        {
+            "title": "Show Gross Profit ?",
+            "content": "You can choose whether or not to display the gross profit"
+        },
+        {
+            "title": "Show Net Profit ?",
+            "content": "You can choose whether or not to display the net profit"
+        },
+        {
+            "title": "Show Leverage ?",
+            "content": "You can choose whether or not to display the current leverage"
+        },
+        {
+            "title": "Show Antimartingala ?",
+            "content": "You can choose whether or not to display the antimartingala next size"
+        },
+        {
+            "title": "Show Global Drawdown ?",
+            "content": "You can choose whether or not to display the global drawdown"
+        },
+        {
+            "title": "Color",
+            "content": "You can choose the font colour"
+        },
+        {
+            "title": "Vertical Position",
+            "content": "You can choose the vertical position"
+        },
+        {
+            "title": "Horizontal Position",
+            "content": "You can choose the horizontal position"
+        }
+    ],
     "twitter_changelog": "BoxInfo"
 }

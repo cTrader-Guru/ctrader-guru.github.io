@@ -280,7 +280,12 @@ img.main-logo {
 }
 
 #product-details .column.description {
-    padding: 0rem 2rem 0rem 2rem!important;
+    padding: 2rem 2rem 2rem 2rem!important;
+    background: #ededed!important;
+    border-radius: .5rem!important;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
 }
 
 #product-details .row.tags {
@@ -313,4 +318,13 @@ img.main-logo {
 
 .description.product .ui.input {
     margin: 2rem 0rem 0rem 0rem!important;
+}
+
+#product-details .images.list img {
+    border: 1px #e1e1e1 solid!important;
+    padding: .3rem!important;
+}
+
+#product-details .tags .ui.label {
+    margin: 0 .2em!important;
 }

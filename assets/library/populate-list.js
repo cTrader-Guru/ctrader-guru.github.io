@@ -6,6 +6,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
     const
         SEARCH = MAIN + ' input.prompt',
         ITEMS = MAIN + ' .item[data-repo]',
+        PRODUCT_PAGE = "#product-details",
         LOADING = MAIN + ' div.ui.search',
         TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live"
 
@@ -136,10 +137,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
     function _openProductDetails(unique, tabname) {
 
-        $('#product-details .container.content').hide();
-        $('#product-details .main.loader.active').show();
+        $(PRODUCT_PAGE + ' .container.content').hide();
+        $(PRODUCT_PAGE + ' .main.loader.active').show();
 
-        $('#product-details')
+        $(PRODUCT_PAGE)
             .modal({
 
                 closeIcon: true,
@@ -153,13 +154,13 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         if (!success || success.length < 1)
                             return;
 
-                        $('#product-details a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
+                        $(PRODUCT_PAGE + ' a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
 
-                        $('#product-details .3d.box').attr("src", success[0].image_box);
-                        $('#product-details .repo.name').text(success[0].name);
-                        $('#product-details .short.description').html(success[0].short_description);
+                        $(PRODUCT_PAGE + ' .3d.box').attr("src", success[0].image_box);
+                        $(PRODUCT_PAGE + ' .repo.name').text(success[0].name);
+                        $(PRODUCT_PAGE + ' .short.description').html(success[0].short_description);
 
-                        $('#product-details .images.list').html("");
+                        $(PRODUCT_PAGE + ' .images.list').html("");
                         success[0].screenshots.forEach(src => {
 
                             $('<a>', {
@@ -169,13 +170,14 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                                 "data-lightbox": "light"
                             }).append($('<img>', {
                                 src: success[0].path + src
-                            })).appendTo('#product-details .images.list');
+                            })).appendTo(PRODUCT_PAGE + ' .images.list');
 
                         });
 
+                        $(PRODUCT_PAGE + ' .row.tags').html("");
                         success[0].tags.forEach(tag => {
 
-                            $("<span class='ui label mini'>" + tag + "</span>").appendTo('#product-details .row.tags');
+                            $("<span class='ui label mini'>" + tag + "</span>").appendTo(PRODUCT_PAGE + ' .row.tags');
 
                         });
 
@@ -220,15 +222,15 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                                     version = data.name || "",
                                     relesed = data.published_at.split("T")[0] || "";
 
-                                $("#product-details .ui.version em").text("Version " + data.name + " (" + relesed.replace(/-/g, ".") + ")");
-                                $("#product-details .ui.version a").attr("href", TWITTER_CHANGELOG.replace("{hashname}", success[0].twitter_changelog));
+                                $(PRODUCT_PAGE + " .ui.version em").text("Version " + data.name + " (" + relesed.replace(/-/g, ".") + ")");
+                                $(PRODUCT_PAGE + " .ui.version a").attr("href", TWITTER_CHANGELOG.replace("{hashname}", success[0].twitter_changelog));
 
                                 let downloadlink = data.zipball_url || "javascript:alert('Problems finding the download');";
-                                $('#product-details a.todownload').attr('href', downloadlink);
+                                $(PRODUCT_PAGE + ' a.todownload').attr('href', downloadlink);
 
                                 setTimeout(() => {
-                                    $('#product-details .container.content').show();
-                                    $('#product-details .main.loader.active').hide();
+                                    $(PRODUCT_PAGE + ' .container.content').show();
+                                    $(PRODUCT_PAGE + ' .main.loader.active').hide();
                                 }, 100);
 
                             }
@@ -250,10 +252,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
     function _installFBComments(queryString) {
 
-        $("#product-details .comments").html("");
-        $("<div id='fb-root'></div>").appendTo("#product-details .comments");
-        $("<script async defer crossorigin='anonymous' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0' nonce='rp16BmXP'></script>").appendTo("#product-details .comments");
-        $("<div class='fb-comments' data-href='https://ctrader-guru.github.io/" + queryString + "' data-width='100%' data-numposts='5' data-mobile='true'></div>").appendTo("#product-details .comments");
+        $(PRODUCT_PAGE + " .comments").html("");
+        $("<div id='fb-root'></div>").appendTo(PRODUCT_PAGE + " .comments");
+        $("<script async defer crossorigin='anonymous' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0' nonce='rp16BmXP'></script>").appendTo(PRODUCT_PAGE + " .comments");
+        $("<div class='fb-comments' data-href='https://ctrader-guru.github.io/" + queryString + "' data-width='100%' data-numposts='5' data-mobile='true'></div>").appendTo(PRODUCT_PAGE + " .comments");
 
     }
 
