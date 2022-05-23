@@ -1,0 +1,43 @@
+{
+
+    "unique": "trendLine-power",
+    "name": "TrendLine Power",
+    "short_description": "A great partner for everyday trades, thanks to this tool you can draw a trendline and have it open trades, or close them or simply get an alert, if you prefer all at once.<br/>Select a trendline and press the shit + T keys (or the ones you chose in the options)",
+    "tags": ["trendline", "breakout"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.gif", "2.png"],
+    "params": [{
+            "title": "Label (Magic Name)",
+            "content": "When it opens a trade it marks it with this label"
+        },
+        {
+            "title": "Max GAP between Bars (pips, over = disable)",
+            "content": "If the trendline is crossed but the gap is greater than this value then all operations are disabled"
+        },
+        {
+            "title": "Key",
+            "content": "The key to be used in conjunction with the modifier key to display the management window"
+        },
+        {
+            "title": "Modifier Key",
+            "content": "The modifier key to be used in conjunction with the key to display the management window"
+        },
+        {
+            "title": "Enabled ?",
+            "content": "Enable notifications to a webhook, next parameters must be changed"
+        },
+        {
+            "title": "API",
+            "content": "Replace with API endpoint"
+        },
+        {
+            "title": "POST params",
+            "content": "Replace with API POST params"
+        },
+        {
+            "title": "All parameters with ...bar at the end",
+            "content": "It means that the event is triggered at the closing of the candle above or below the trendline"
+        }
+    ],
+    "twitter_changelog": "TrendLinePower"
+}

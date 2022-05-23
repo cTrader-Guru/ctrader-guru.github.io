@@ -5,6 +5,15 @@
     scrollbar-width: thin!important;
 }
 
+a:not(.button, .item) {
+    color: #9e9e9e!important;
+}
+
+a:hover:not(.button, .item) {
+    color: black!important;
+    text-decoration: none!important;
+}
+
 
 /* WebKit and Chromiums */
 
@@ -279,13 +288,17 @@ img.main-logo {
     visibility: hidden!important;
 }
 
-#product-details .column.description {
+#product-details .column.general {
     padding: 2rem 2rem 2rem 2rem!important;
+}
+
+#product-details .column.description {
+    border: 1px white solid!important;
     background: #ededed!important;
     border-radius: .5rem!important;
-    -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
-    -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
-    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.171)!important;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.150)!important;
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.150)!important;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.150)!important;
 }
 
 #product-details .row.tags {
@@ -301,7 +314,7 @@ img.main-logo {
 }
 
 #product-details .download.box {
-    margin: 0rem 0rem 3rem 0rem!important;
+    margin: 3rem 0rem 3rem 0rem!important;
 }
 
 #product-details .download.box button {
@@ -326,5 +339,5 @@ img.main-logo {
 }
 
 #product-details .tags .ui.label {
-    margin: 0 .2em!important;
+    margin: .2em .2em!important;
 }
