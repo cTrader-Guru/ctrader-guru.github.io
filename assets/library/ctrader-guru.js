@@ -16,7 +16,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.032",
+        Version: "1.033",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -119,6 +119,27 @@
 
             });
 
+        },
+        RandomString: (length) => {
+
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < length; i++) {
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            }
+            return text;
+
+        },
+        ReloadFacebookSDK: () => {
+
+            if (typeof(FB) == 'undefined') return;
+            FB.init({
+                appId: '524502735981711',
+                status: true,
+                xfbml: true,
+                version: 'v2.7' // or v2.6, v2.5, v2.4, v2.3
+            });
+            console.log("FB SDK Reloaded");
         }
 
     };
