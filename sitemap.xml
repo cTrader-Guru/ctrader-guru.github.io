@@ -18,4 +18,10 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://ctrader-guru.github.io/?repository=engulfing&amp;category=cbots</loc>
+      <lastmod>2022-05-24T16:10:18+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
