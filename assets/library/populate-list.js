@@ -156,6 +156,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         if (!success || success.length < 1)
                             return;
 
+                        // --> Try to edit description for Googlebot
+                        $("meta[name='description']").attr('content', success[0].short_description);
+                        $("title").html("cTrader Guru | " + success[0].name);
+
                         $(PRODUCT_PAGE + ' a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
 
                         $(PRODUCT_PAGE + ' .3d.box').attr("src", success[0].image_box);
@@ -245,6 +249,9 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                 onHidden: () => {
 
                     window.history.pushState({}, "", "/");
+
+                    $("meta[name='description']").attr('content', 'All our cBot, indicators and tools are free and open source. We are the community where learning trading becomes easy, fun and automatic.');
+                    $("title").html("cTrader Guru | cBots, indicatos and tools for cTrader");
 
                 }
 
