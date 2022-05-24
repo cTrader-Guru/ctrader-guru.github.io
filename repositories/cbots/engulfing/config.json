@@ -1,0 +1,119 @@
+{
+
+    "unique": "engulfing",
+    "name": "Engulfing",
+    "short_description": "A powerful cBot using the engulfing pattern, one of the most used in the world. Optimizations highlight dimensions that work, just choose the best optimization.",
+    "tags": ["engulfing", "pattern"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg", "2.jpg"],
+    "params": [{
+            "title": "Label (Magic Name)",
+            "content": "When it opens a trade it marks it with this label"
+        },
+        {
+            "title": "Stop Loss (pips)",
+            "content": "The number of pips for the stoploss"
+        },
+        {
+            "title": "Take Profit (pips)",
+            "content": "The number of pips for the takeprofit"
+        },
+        {
+            "title": "Money Target (zero disabled)",
+            "content": "The amount above which it closes all open trades with this cbot"
+        },
+        {
+            "title": "Slippage (pips)",
+            "content": "The number of pips for slippage"
+        },
+        {
+            "title": "Activation (pips)",
+            "content": "The number of pips for the activation of breakeven"
+        },
+        {
+            "title": "Distance (pips, move Stop Loss)",
+            "content": "The number of pips that will be added to the breakeven point"
+        },
+        {
+            "title": "Activation (pips)",
+            "content": "The number of pips for the activation of trailing"
+        },
+        {
+            "title": "Distance (pips, move Stop Loss)",
+            "content": "The number of pips marking the distance between the current price and the stoploss"
+        },
+        {
+            "title": "Fixed Lots",
+            "content": "If greater than zero it will be used as fixed size, ignoring percentages"
+        },
+        {
+            "title": "Capital",
+            "content": "The capital with which to proportion the size as a percentage"
+        },
+        {
+            "title": "% Risk",
+            "content": "The proportion of the risk"
+        },
+        {
+            "title": "Pips To Calculate ( if no stoploss, empty = '100' )",
+            "content": "The number of pips by which the risk is calculated"
+        },
+        {
+            "title": "Max Spread allowed",
+            "content": "If the spread exceeds this value, the trigger is not confirmed and therefore the trade is not opened"
+        },
+        {
+            "title": "Pause over this time",
+            "content": "The time of the start of the pause"
+        },
+        {
+            "title": "Pause under this time",
+            "content": "The time of the end of the pause"
+        },
+        {
+            "title": "Max GAP Allowed (pips)",
+            "content": "If the gap between the last 2 candles exceeds this value, the trigger is not confirmed and therefore the trade is not opened"
+        },
+        {
+            "title": "Max Number of Trades",
+            "content": "The maximum number of trades to market simultaneously"
+        },
+        {
+            "title": "Minimum Husband Body",
+            "content": "The minimum number of pips for the body of the largest candle"
+        },
+        {
+            "title": "Maximum Husband Body",
+            "content": "The maximum number of pips for the body of the largest candle"
+        },
+        {
+            "title": "Minimum Wife Body %",
+            "content": "The proportion of the smaller candle to the larger candle"
+        },
+        {
+            "title": "Maximum Wife Body %",
+            "content": "The proportion of the smaller candle to the larger candle"
+        },
+        {
+            "title": "EMA Fast Period",
+            "content": "The period of the fastest EMA needed to identify the trend"
+        },
+        {
+            "title": "EMA Slow Period",
+            "content": "The period of the slower EMA needed to identify the trend"
+        },
+        {
+            "title": "TOP Period",
+            "content": "The number of candles used to identify whether a movement is bullish or bearish"
+        },
+        {
+            "title": "Open Position On Start",
+            "content": "Open position only for debugging"
+        },
+        {
+            "title": "Color Text",
+            "content": "The text color for notification on the chart"
+        }
+    ],
+    "twitter_changelog": "Engulfing"
+}

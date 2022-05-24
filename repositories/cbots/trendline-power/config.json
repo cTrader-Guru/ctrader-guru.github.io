@@ -2,7 +2,7 @@
 
     "unique": "trendline-power",
     "name": "TrendLine Power",
-    "short_description": "A great partner for everyday trades, thanks to this tool you can draw a trendline and have it open trades, or close them or simply get an alert, if you prefer all at once.<br/>Select a trendline and press the shit + T keys (or the ones you chose in the options)",
+    "short_description": "A great partner for everyday trades, thanks to this tool you can draw a trendline and have it open trades, or close them or simply get an alert, if you prefer all at once. Select a trendline and press the shit + T keys (or the ones you chose in the options)",
     "tags": ["trendline", "breakout"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.gif", "2.png"],

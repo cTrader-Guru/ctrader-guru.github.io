@@ -94,11 +94,6 @@ img.main-logo {
     overflow-y: auto!important;
 }
 
-#product-details .scrolling.content,
-#main-menu .scrolling.content {
-    margin-top: 5rem!important;
-}
-
 .description.product.items .description {
     overflow: hidden!important;
     text-overflow: ellipsis!important;
@@ -340,4 +335,9 @@ img.main-logo {
 
 #product-details .tags .ui.label {
     margin: .2em .2em!important;
+}
+
+#product-details .scrolling.content,
+#main-menu .scrolling.content {
+    margin: 5rem 0rem 5rem 0rem!important;
 }

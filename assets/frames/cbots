@@ -18,7 +18,8 @@
             TAB = 'cbots',
             GITHUB_REPOS = [
 
-                "trendline-power"
+                "trendline-power",
+                "engulfing"
 
             ];
 
