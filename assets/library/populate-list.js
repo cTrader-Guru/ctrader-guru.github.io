@@ -160,6 +160,12 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         $("meta[name='description']").attr('content', success[0].short_description);
                         $("title").html("cTrader Guru | " + success[0].name);
 
+                        $("meta[property='og:type']").attr('content', "og:product");
+                        $("meta[property='og:url']").attr('content', 'https://ctrader-guru.github.io/' + MyQueryString);
+                        $("meta[property='og:title']").attr('content', "cTrader Guru | " + success[0].name);
+                        $("meta[property='og:description']").attr('content', success[0].short_description);
+                        $("meta[property='og:image']").attr('content', 'https://ctrader-guru.github.io' + success[0].image_box);
+
                         $(PRODUCT_PAGE + ' a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
 
                         $(PRODUCT_PAGE + ' .3d.box').attr("src", success[0].image_box);
@@ -252,6 +258,12 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                     $("meta[name='description']").attr('content', 'All our cBot, indicators and tools are free and open source. We are the community where learning trading becomes easy, fun and automatic.');
                     $("title").html("cTrader Guru | cBots, indicatos and tools for cTrader");
+
+                    $("meta[property='og:type']").attr('content', "website");
+                    $("meta[property='og:url']").attr('content', 'https://ctrader-guru.github.io/');
+                    $("meta[property='og:title']").attr('content', "All our cBot, indicators and tools are free and open source.");
+                    $("meta[property='og:description']").attr('content', "We are the community where learning trading becomes easy, fun and automatic.");
+                    $("meta[property='og:image']").attr('content', 'https://ctrader-guru.github.io/assets/images/ctrader.guru.png');
 
                 }
 
