@@ -163,7 +163,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         $(PRODUCT_PAGE + ' .short.description').html(success[0].short_description);
 
                         $(PRODUCT_PAGE + ' .images.list').html("");
-                        success[0].screenshots.forEach(src => {
+                        success[0].screenshots.forEach((src, i) => {
 
                             $('<a>', {
                                 href: success[0].path + src,
@@ -171,7 +171,8 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                                 class: 'ui small image',
                                 "data-lightbox": "light"
                             }).append($('<img>', {
-                                src: success[0].path + src
+                                src: success[0].path + src,
+                                alt: "Product description " + i
                             })).appendTo(PRODUCT_PAGE + ' .images.list');
 
                         });
