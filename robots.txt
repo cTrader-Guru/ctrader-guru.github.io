@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://ctrader-guru.github.io/sitemap.xml
