@@ -183,7 +183,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                         });
 
-                        _installFBComments(MyQueryString);
+                        _installComments();
 
                         $('#sJZ3vntth').html('');
 
@@ -252,13 +252,25 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
     }
 
-    function _installFBComments(queryString) {
+    function _installComments() {
 
-        $(PRODUCT_PAGE + " .comments").html("");
-        $("<div id='fb-root'></div>").appendTo(PRODUCT_PAGE + " .comments");
-        $("<script async defer crossorigin='anonymous' src='https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0' nonce='" + CG.RandomString(8) + "'></script>").appendTo(PRODUCT_PAGE + " .comments"); // --> nonce rp16BmXP
-        $("<div class='fb-comments' data-href='https://ctrader-guru.github.io/" + queryString + "' data-width='100%' data-numposts='5' data-mobile='true'></div>").appendTo(PRODUCT_PAGE + " .comments");
-        CG.ReloadFacebookSDK();
+        $(PRODUCT_PAGE + " .comments").html("<span class='ui text'>Loading comments...</span>");
+
+        $.ajax({
+            url: "/assets/frames/disqus",
+            cache: true,
+            async: true,
+            dataType: 'html',
+            success: (data) => {
+
+                if (typeof(data) == 'undefined' || data.length < 1) return;
+
+                let disqus = data.replace(/PAGE_URL/g, "'" + location.href + "'").replace(/PAGE_IDENTIFIER/g, "'" + location.href + "'");
+
+                $(PRODUCT_PAGE + " .comments").html(disqus);
+
+            }
+        });
 
     }
 

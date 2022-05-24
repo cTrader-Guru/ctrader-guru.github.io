@@ -16,7 +16,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.033",
+        Version: "1.034",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -129,17 +129,6 @@
             }
             return text;
 
-        },
-        ReloadFacebookSDK: () => {
-
-            if (typeof(FB) == 'undefined') return;
-            FB.init({
-                appId: '524502735981711',
-                status: true,
-                xfbml: true,
-                version: 'v2.7' // or v2.6, v2.5, v2.4, v2.3
-            });
-            console.log("FB SDK Reloaded");
         }
 
     };
