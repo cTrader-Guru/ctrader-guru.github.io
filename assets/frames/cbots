@@ -19,7 +19,8 @@
             GITHUB_REPOS = [
 
                 "trendline-power",
-                "engulfing"
+                "engulfing",
+                "price-action-advisor"
 
             ];
 

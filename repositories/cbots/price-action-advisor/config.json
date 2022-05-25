@@ -1,0 +1,79 @@
+{
+
+    "unique": "price-action-advisor",
+    "name": "Price Action Advisor",
+    "short_description": "Interesting strategy, follows market intentions, on breakout of the predetermined average and with conditions entered, opens and manages the trade.",
+    "tags": ["price action", "average", "breakout"],
+    "img_3d_box": "3d-box.webp",
+    "screenshots": ["1.webp", "2.webp", "3.webp"],
+    "params": [{
+            "title": "Label (Magic Name)",
+            "content": "When it opens a trade it marks it with this label"
+        },
+        {
+            "title": "Preset information",
+            "content": "When you save a preset remember to enter the setups information in this field, e.g., optimization period; profit factor; etc."
+        },
+        {
+            "title": "Period (bars)",
+            "content": "The number of bars for calculating the average"
+        },
+        {
+            "title": "Minimum (pips; zero = all)",
+            "content": "The minimum number of pips that the average has to reach"
+        },
+        {
+            "title": "Trading ?",
+            "content": "Enable or disable trading"
+        },
+        {
+            "title": "SL/TP Enabled ?",
+            "content": "Enable or disable stoploss and takeprofit setup"
+        },
+        {
+            "title": "Recovery ?",
+            "content": "Try one recovery"
+        },
+        {
+            "title": "K + SL/TP (pips)",
+            "content": "Adds a coefficient to stoploss and takeprofit"
+        },
+        {
+            "title": "Activated ?",
+            "content": "Enable alerts"
+        },
+        {
+            "title": "Max Spread allowed",
+            "content": "If the spread exceeds this value, the trigger is not confirmed and therefore the trade is not opened"
+        },
+        {
+            "title": "Pause over this time",
+            "content": "The time of the start of the pause"
+        },
+        {
+            "title": "Pause under this time",
+            "content": "The time of the end of the pause"
+        },
+        {
+            "title": "Max GAP Allowed (pips)",
+            "content": "If the gap between the last 2 candles exceeds this value, the trigger is not confirmed and therefore the trade is not opened"
+        },
+        {
+            "title": "Fixed Lots",
+            "content": "If greater than zero it will be used as fixed size, ignoring percentages"
+        },
+        {
+            "title": "Capital",
+            "content": "The capital with which to proportion the size as a percentage"
+        },
+        {
+            "title": "% Risk",
+            "content": "The proportion of the risk"
+        },
+        {
+            "title": "Pips To Calculate ( if no stoploss, empty = '100' )",
+            "content": "The number of pips by which the risk is calculated"
+        }
+    ],
+    "twitter_changelog": "PriceActionAdvisor"
+}

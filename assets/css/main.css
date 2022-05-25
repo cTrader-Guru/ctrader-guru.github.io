@@ -209,7 +209,7 @@ img.main-logo {
 }
 
 .items.description.product {
-    max-height: 500px!important;
+    max-height: 550px!important;
     overflow-y: auto!important;
     overflow-x: hidden!important;
 }
