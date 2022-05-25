@@ -7,12 +7,20 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.gif"],
     "params": [{
+            "title": "Params",
+            "content": ""
+        },
+        {
             "title": "Label (empty = all)",
             "content": "Which label should monitor, if left blank monitors all labels"
         },
         {
             "title": "Antimartingala K%",
             "content": "The pyramidal multiplier for size calculation"
+        },
+        {
+            "title": "Options",
+            "content": ""
         },
         {
             "title": "Panel type ?",
@@ -37,6 +45,10 @@
         {
             "title": "Show Global Drawdown ?",
             "content": "You can choose whether or not to display the global drawdown"
+        },
+        {
+            "title": "Styles",
+            "content": ""
         },
         {
             "title": "Color",

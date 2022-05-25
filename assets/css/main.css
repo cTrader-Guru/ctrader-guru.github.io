@@ -214,7 +214,7 @@ img.main-logo {
 
 .items.description.product {
     padding: 1rem!important;
-    max-height: 550px!important;
+    /*max-height: 550px!important;*/
     overflow-y: auto!important;
     overflow-x: hidden!important;
 }

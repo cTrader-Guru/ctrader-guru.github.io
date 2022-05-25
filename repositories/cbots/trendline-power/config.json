@@ -7,12 +7,24 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.gif", "2.png"],
     "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
         },
         {
+            "title": "Strategy",
+            "content": ""
+        },
+        {
             "title": "Max GAP between Bars (pips, over = disable)",
             "content": "If the trendline is crossed but the gap is greater than this value then all operations are disabled"
+        },
+        {
+            "title": "Hot Key",
+            "content": ""
         },
         {
             "title": "Key",
@@ -21,6 +33,10 @@
         {
             "title": "Modifier Key",
             "content": "The modifier key to be used in conjunction with the key to display the management window"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
         },
         {
             "title": "Enabled ?",

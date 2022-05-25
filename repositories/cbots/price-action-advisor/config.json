@@ -7,6 +7,10 @@
     "img_3d_box": "3d-box.webp",
     "screenshots": ["1.webp", "2.webp", "3.webp"],
     "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
         },
@@ -15,12 +19,20 @@
             "content": "When you save a preset remember to enter the setups information in this field, e.g., optimization period; profit factor; etc."
         },
         {
+            "title": "Average",
+            "content": ""
+        },
+        {
             "title": "Period (bars)",
             "content": "The number of bars for calculating the average"
         },
         {
             "title": "Minimum (pips; zero = all)",
             "content": "The minimum number of pips that the average has to reach"
+        },
+        {
+            "title": "Trading",
+            "content": ""
         },
         {
             "title": "Trading ?",
@@ -39,8 +51,16 @@
             "content": "Adds a coefficient to stoploss and takeprofit"
         },
         {
+            "title": "Alerts",
+            "content": ""
+        },
+        {
             "title": "Activated ?",
             "content": "Enable alerts"
+        },
+        {
+            "title": "Filters",
+            "content": ""
         },
         {
             "title": "Max Spread allowed",
@@ -57,6 +77,10 @@
         {
             "title": "Max GAP Allowed (pips)",
             "content": "If the gap between the last 2 candles exceeds this value, the trigger is not confirmed and therefore the trade is not opened"
+        },
+        {
+            "title": "Money Management",
+            "content": ""
         },
         {
             "title": "Fixed Lots",

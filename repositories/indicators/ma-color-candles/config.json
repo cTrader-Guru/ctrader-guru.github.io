@@ -7,8 +7,16 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.jpg"],
     "params": [{
+            "title": "Mode",
+            "content": ""
+        },
+        {
             "title": "Indicator",
             "content": "You can select the mode with which to interpret the trend"
+        },
+        {
+            "title": "Params",
+            "content": ""
         },
         {
             "title": "Period",
@@ -21,6 +29,10 @@
         {
             "title": "MA Type",
             "content": "The type of Moving Average"
+        },
+        {
+            "title": "DeTrended",
+            "content": ""
         },
         {
             "title": "K% (zero = auto)",

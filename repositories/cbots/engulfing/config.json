@@ -7,8 +7,16 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.jpg", "2.jpg"],
     "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
+        },
+        {
+            "title": "Strategy",
+            "content": ""
         },
         {
             "title": "Stop Loss (pips)",
@@ -27,6 +35,10 @@
             "content": "The number of pips for slippage"
         },
         {
+            "title": "Break Even",
+            "content": ""
+        },
+        {
             "title": "Activation (pips)",
             "content": "The number of pips for the activation of breakeven"
         },
@@ -35,12 +47,20 @@
             "content": "The number of pips that will be added to the breakeven point"
         },
         {
+            "title": "Trailing",
+            "content": ""
+        },
+        {
             "title": "Activation (pips)",
             "content": "The number of pips for the activation of trailing"
         },
         {
             "title": "Distance (pips, move Stop Loss)",
             "content": "The number of pips marking the distance between the current price and the stoploss"
+        },
+        {
+            "title": "Money Management",
+            "content": ""
         },
         {
             "title": "Fixed Lots",
@@ -57,6 +77,10 @@
         {
             "title": "Pips To Calculate ( if no stoploss, empty = '100' )",
             "content": "The number of pips by which the risk is calculated"
+        },
+        {
+            "title": "Filters",
+            "content": ""
         },
         {
             "title": "Max Spread allowed",
@@ -107,8 +131,16 @@
             "content": "The number of candles used to identify whether a movement is bullish or bearish"
         },
         {
+            "title": "Debug",
+            "content": ""
+        },
+        {
             "title": "Open Position On Start",
             "content": "Open position only for debugging"
+        },
+        {
+            "title": "Styles",
+            "content": ""
         },
         {
             "title": "Color Text",
