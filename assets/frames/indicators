@@ -18,7 +18,8 @@
             TAB = 'indicators',
             GITHUB_REPOS = [
 
-                "box-info"
+                "box-info",
+                "ma-color-candles"
 
             ];
 

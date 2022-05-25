@@ -1,0 +1,39 @@
+{
+
+    "unique": "ma-color-candles",
+    "name": "MA Color Candles",
+    "short_description": "Excellent utility for keeping profits and spreads under control at all times, to be used on any chart with any strategy, it is developed as an indicator so can be inserted and saved with any template.",
+    "tags": ["bars", "candles", "support", "resistance", "trend following", "reverse"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg"],
+    "params": [{
+            "title": "Indicator",
+            "content": "You can select the mode with which to interpret the trend"
+        },
+        {
+            "title": "Period",
+            "content": "The period (number of bars) of the indicator selected in the previous parameter"
+        },
+        {
+            "title": "Smooth",
+            "content": "The average of the indicator values you selected in the previous parameters"
+        },
+        {
+            "title": "MA Type",
+            "content": "The type of Moving Average"
+        },
+        {
+            "title": "K% (zero = auto)",
+            "content": "The value of Detrended that is used to interpret the trend"
+        },
+        {
+            "title": "Auto Period (bars)",
+            "content": "If the value of K% is zero then it will automatically calculate the value by considering an average of the selected bars"
+        },
+        {
+            "title": "Auto Period (bars)",
+            "content": "If the value of K% is zero then it will automatically calculate the value by considering an average of the selected bars"
+        }
+    ],
+    "twitter_changelog": "MAColorCandles"
+}
