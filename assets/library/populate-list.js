@@ -202,10 +202,16 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                             success[0].params.forEach(param => {
 
-                                if (!param.title || !param.content) return;
+                                if (param.content.length == 0) {
 
-                                $("<div class='title'><i class='dropdown icon'></i>" + param.title + "</div>").appendTo('#sJZ3vntth');
-                                $("<div class='content'><p>" + param.content + "</p></div>").appendTo('#sJZ3vntth');
+                                    $("<h5 class='ui text'>" + param.title + "</h5>").appendTo('#sJZ3vntth');
+
+                                } else {
+
+                                    $("<div class='title'><i class='dropdown icon'></i>" + param.title + "</div>").appendTo('#sJZ3vntth');
+                                    $("<div class='content'><p>" + param.content + "</p></div>").appendTo('#sJZ3vntth');
+
+                                }
 
                             });
 

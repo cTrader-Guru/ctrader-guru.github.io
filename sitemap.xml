@@ -30,4 +30,16 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://ctrader-guru.github.io/?repository=price-action-advisor&amp;category=cbots</loc>
+      <lastmod>2022-05-25T16:10:18+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://ctrader-guru.github.io/?repository=ema-power&amp;category=cbots</loc>
+      <lastmod>2022-05-25T17:10:18+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>
