@@ -10,7 +10,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         SHOP_CONTAINER = '#shop-container',
         LOADING = MAIN + ' div.ui.search',
         TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live",
-        POPULATE_STEP = 2
+        POPULATE_STEP = 3
 
     // --> Search params to open request product
     const
@@ -70,48 +70,15 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
     });
 
-    $(window).scroll(function() {
-
-        if ($(window).scrollTop() + $(window).height() <= $(document).height() - 2) return;
-
-        const
-            $ACTIVE_TAB = $(SHOP_CONTAINER + ' .tab.active .description.product'),
-            $TMP_LOADING = $("<div class='ui active loader'></div>"),
-            $HIDDENS = $ACTIVE_TAB.find('.item:hidden');
-
-        if ($HIDDENS.length == 0) {
-
-            $TMP_LOADING.remove();
-            console.log('No more repos...');
-            return;
-
-        }
-
-        if ($ACTIVE_TAB.find('.active.loader').length == 0) {
-
-            $TMP_LOADING.appendTo($ACTIVE_TAB);
-
-        } else {
-
-            return;
-
-        }
-
-        setTimeout(() => {
-
-            $TMP_LOADING.remove();
-            $HIDDENS.slice(0, POPULATE_STEP).show();
-            console.log('Load more repos...');
-
-        }, 500);
-
-    });
-
     // --> Adding all available repositories
     CG.LoadRepos(GITHUB_REPOS, TAB, (success) => {
 
         if (!success || success.length < 1)
             return;
+
+        const
+            $TMP_LOADING = $("<div class='ui text container center aligned load more'><button class='ui button tiny blue'>Load More</button></div>"),
+            $ACTIVE_TAB = $(SHOP_CONTAINER + ' .tab.active .description.product');
 
         // --> Hashtags events
         $(ITEMS + " .extra .ui.label").on("click", function() {
@@ -133,6 +100,25 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
             _openProductDetails($(this).closest(".item").attr("data-repo"), $(this).closest(".item").attr("data-cat"));
 
         });
+
+        // --> Item loader
+        $TMP_LOADING.on('click', (evt) => {
+
+            $TMP_LOADING.find('button').text('Loading...');
+
+            setTimeout(() => {
+
+                $ACTIVE_TAB.find('.item:hidden').slice(0, POPULATE_STEP).show(0, () => {
+
+                    $TMP_LOADING.find('button').text('Load More');
+                    if ($ACTIVE_TAB.find('.item:hidden').length == 0) $TMP_LOADING.remove();
+
+                });
+
+            }, 500);
+
+        });
+        if ($ACTIVE_TAB.find('.item:hidden').length > 0) $TMP_LOADING.appendTo($ACTIVE_TAB);
 
         // --> Initialize search
         $('.ui.search')
