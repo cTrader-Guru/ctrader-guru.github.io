@@ -11,6 +11,10 @@
             "content": ""
         },
         {
+            "title": "Price Action Advisor x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
         },
@@ -97,6 +101,18 @@
         {
             "title": "Pips To Calculate ( if no stoploss, empty = '100' )",
             "content": "The number of pips by which the risk is calculated"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color Text",
+            "content": "The text color for notification on the chart"
+        },
+        {
+            "title": "Size Text",
+            "content": "The font size for notifications on the chart"
         }
     ],
     "twitter_changelog": "PriceActionAdvisor"

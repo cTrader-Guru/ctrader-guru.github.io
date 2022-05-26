@@ -7,8 +7,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         SEARCH = MAIN + ' input.prompt',
         ITEMS = MAIN + ' .item[data-repo]',
         PRODUCT_PAGE = "#product-details",
+        SHOP_CONTAINER = '#shop-container',
         LOADING = MAIN + ' div.ui.search',
-        TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live"
+        TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live",
+        POPULATE_STEP = 3
 
     // --> Search params to open request product
     const
@@ -118,6 +120,33 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                 }
             });
+
+    }, POPULATE_STEP);
+
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() + $(window).height() != $(document).height()) return;
+
+        const
+            $ACTIVE_TAB = $(SHOP_CONTAINER + ' .tab.active .description.product'),
+            $TMP_LOADING = $("<div class='ui text container center aligned'>Loading...</div>"),
+            $HIDDENS = $ACTIVE_TAB.find('.item:hidden');
+
+        if ($HIDDENS.length == 0) {
+
+            $TMP_LOADING.remove();
+            return;
+
+        }
+
+        if ($ACTIVE_TAB.find($TMP_LOADING).length == 0) $TMP_LOADING.appendTo($ACTIVE_TAB);
+
+        setTimeout(() => {
+
+            $TMP_LOADING.remove();
+            $HIDDENS.slice(0, POPULATE_STEP).show();
+
+        }, 500);
 
     });
 

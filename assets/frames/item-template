@@ -1,4 +1,4 @@
-<div class="item" data-repo="" data-cat="">
+<div class="item" data-repo="" data-cat="" style="display: none;">
     <div class="image">
         <img src="" loading="lazy" class="open details">
     </div>

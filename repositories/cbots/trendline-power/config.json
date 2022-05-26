@@ -11,6 +11,10 @@
             "content": ""
         },
         {
+            "title": "TrendLine Power x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
         },
@@ -49,6 +53,10 @@
         {
             "title": "POST params",
             "content": "Replace with API POST params"
+        },
+        {
+            "title": "Generics",
+            "content": ""
         },
         {
             "title": "All parameters with ...bar at the end",

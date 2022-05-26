@@ -7,6 +7,14 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.gif"],
     "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Box Info x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
             "title": "Params",
             "content": ""
         },

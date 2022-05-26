@@ -7,6 +7,14 @@
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.jpg"],
     "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "MA Color Candles x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
             "title": "Mode",
             "content": ""
         },
@@ -45,6 +53,26 @@
         {
             "title": "Auto Period (bars)",
             "content": "If the value of K% is zero then it will automatically calculate the value by considering an average of the selected bars"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Bullish Color",
+            "content": "You can choose the color of bullish candles"
+        },
+        {
+            "title": "Mid Bullish Color",
+            "content": "You can choose the color of mid bullish candles"
+        },
+        {
+            "title": "Bearish Color",
+            "content": "You can choose the color of bearish candles"
+        },
+        {
+            "title": "Mid Bearish Color",
+            "content": "You can choose the color of mid bearish candles"
         }
     ],
     "twitter_changelog": "MAColorCandles"

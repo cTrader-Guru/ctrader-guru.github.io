@@ -12,6 +12,7 @@
             evaluateScripts: true,
             context: 'parent',
             auto: true,
+            alwaysRefresh: false,
             path: '/assets/frames/'
 
         });

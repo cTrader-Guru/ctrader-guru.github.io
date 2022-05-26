@@ -11,6 +11,10 @@
             "content": ""
         },
         {
+            "title": "EMA Power x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
             "title": "Label (Magic Name)",
             "content": "When it opens a trade it marks it with this label"
         },

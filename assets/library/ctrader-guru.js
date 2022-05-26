@@ -2,21 +2,10 @@
 
     "use strict";
 
-    const GITHUB_API = {
-
-        repo: {
-
-            info: "https://api.github.com/repos/cTrader-Guru/Box-Info",
-            release: "https://api.github.com/repos/cTrader-Guru/Box-Info/releases/latest"
-
-        }
-
-    };
-
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.050",
+        Version: "1.051",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -41,9 +30,12 @@
             });
 
         },
-        LoadRepos: (GITHUB_REPOS, tabname, onLoaded, item_path = "/repositories/{folder}/{repo_name}/", item_template = "/assets/frames/item-template") => {
+        LoadRepos: (GITHUB_REPOS, tabname, onLoaded, show_first = 5) => {
 
-            var $shop_items = $("#" + tabname + "-items");
+            var
+                $shop_items = $("#" + tabname + "-items"),
+                item_path = "/repositories/{folder}/{repo_name}/",
+                item_template = "/assets/frames/item-template";
 
             CG.LoadTemplate(item_template, (template) => {
 
@@ -94,6 +86,7 @@
                             });
 
                             $shop_items.append($tmp);
+                            if (count < show_first) $tmp.show();
 
                         }
 
