@@ -21,7 +21,8 @@
                 "box-info",
                 "ma-color-candles",
                 "demarker",
-                "supertrend"
+                "supertrend",
+                "trenko"
 
             ];
 

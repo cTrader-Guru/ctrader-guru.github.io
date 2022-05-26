@@ -1,0 +1,75 @@
+{
+
+    "unique": "trenko",
+    "name": "Trenko",
+    "short_description": "The graphical representation of Renko Boxes, with this indicator you can recreate the Renko strategy with the possibility of backtesting.",
+    "tags": ["renko", "trend"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Box Info x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Label (empty = all)",
+            "content": "Which label should monitor, if left blank monitors all labels"
+        },
+        {
+            "title": "Antimartingala K%",
+            "content": "The pyramidal multiplier for size calculation"
+        },
+        {
+            "title": "Options",
+            "content": ""
+        },
+        {
+            "title": "Panel type ?",
+            "content": "You can select the display between Banner or Box"
+        },
+        {
+            "title": "Show Gross Profit ?",
+            "content": "You can choose whether or not to display the gross profit"
+        },
+        {
+            "title": "Show Net Profit ?",
+            "content": "You can choose whether or not to display the net profit"
+        },
+        {
+            "title": "Show Leverage ?",
+            "content": "You can choose whether or not to display the current leverage"
+        },
+        {
+            "title": "Show Antimartingala ?",
+            "content": "You can choose whether or not to display the antimartingala next size"
+        },
+        {
+            "title": "Show Global Drawdown ?",
+            "content": "You can choose whether or not to display the global drawdown"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color",
+            "content": "You can choose the font colour"
+        },
+        {
+            "title": "Vertical Position",
+            "content": "You can choose the vertical position"
+        },
+        {
+            "title": "Horizontal Position",
+            "content": "You can choose the horizontal position"
+        }
+    ],
+    "twitter_changelog": "Trenko"
+}
