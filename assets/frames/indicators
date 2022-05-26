@@ -3,7 +3,7 @@
         <div class="ui search">
             <div class="ui icon input">
                 <input class="prompt" type="text" placeholder="Search indicators, type minimum 3 chars">
-                <i class="times icon link cleanall" style="display: none;"></i>
+                <i class="times icon link cleanall red" style="display: none;"></i>
             </div>
             <div class="results"></div>
         </div>
@@ -22,7 +22,8 @@
                 "ma-color-candles",
                 "demarker",
                 "supertrend",
-                "trenko"
+                "trenko",
+                "zigzag"
 
             ];
 

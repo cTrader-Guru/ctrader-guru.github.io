@@ -1,0 +1,39 @@
+{
+
+    "unique": "zigzag",
+    "name": "ZigZag",
+    "short_description": "The deviation indicator for excellence, in particular this indicator can also be adapted to closes, be careful though because it is a repaint.",
+    "tags": ["deviation"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png", "2.jpg"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "ZigZag x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Mode",
+            "content": "You can choose between Open/Close or High/Low"
+        },
+        {
+            "title": "Depth",
+            "content": "The number of bars to be used for the calculation"
+        },
+        {
+            "title": "Deviation",
+            "content": "The standard deviation, adjust this value to your view"
+        },
+        {
+            "title": "BackStep",
+            "content": "Adjust this value to your view"
+        }
+    ],
+    "twitter_changelog": "ZigZag"
+}
