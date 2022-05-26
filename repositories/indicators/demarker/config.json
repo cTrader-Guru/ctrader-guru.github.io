@@ -1,0 +1,31 @@
+{
+
+    "unique": "demarker",
+    "name": "Demarker",
+    "short_description": "One of the most used oscillators in the world, definitely better than RSI, better filters market noise. It is used in almost all our strategies, suitable for all timeframes.",
+    "tags": ["oscillator", "average"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Demarker x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Periods",
+            "content": "The number of bars to be used for the calculation"
+        },
+        {
+            "title": "Moving Average",
+            "content": "The type of average to use for the calculation"
+        }
+    ],
+    "twitter_changelog": "Demarker"
+}

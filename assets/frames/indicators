@@ -19,7 +19,8 @@
             GITHUB_REPOS = [
 
                 "box-info",
-                "ma-color-candles"
+                "ma-color-candles",
+                "demarker"
 
             ];
 

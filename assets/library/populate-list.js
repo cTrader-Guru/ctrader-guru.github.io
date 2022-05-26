@@ -104,18 +104,11 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         // --> Item loader
         $TMP_LOADING.on('click', (evt) => {
 
-            $TMP_LOADING.find('button').text('Loading...');
+            $ACTIVE_TAB.find('.item:hidden').slice(0, POPULATE_STEP).show(0, () => {
 
-            setTimeout(() => {
+                if ($ACTIVE_TAB.find('.item:hidden').length == 0) $TMP_LOADING.remove();
 
-                $ACTIVE_TAB.find('.item:hidden').slice(0, POPULATE_STEP).show(0, () => {
-
-                    $TMP_LOADING.find('button').text('Load More');
-                    if ($ACTIVE_TAB.find('.item:hidden').length == 0) $TMP_LOADING.remove();
-
-                });
-
-            }, 500);
+            });
 
         });
         if ($ACTIVE_TAB.find('.item:hidden').length > 0) $TMP_LOADING.appendTo($ACTIVE_TAB);
