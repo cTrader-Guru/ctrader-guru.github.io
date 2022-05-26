@@ -1,0 +1,35 @@
+{
+
+    "unique": "supertrend",
+    "name": "SuperTrend",
+    "short_description": "When it first came out it was successful because of its ease of interpretation, to this day it is the most popular indicator used by beginners.",
+    "tags": ["trend following", "breakout"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "SuperTrend x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used for the calculation"
+        },
+        {
+            "title": "Multiplier",
+            "content": "The coefficient to better interpret the period"
+        },
+        {
+            "title": "Alert On Change",
+            "content": "You can enable a notification every time it changes direction"
+        }
+    ],
+    "twitter_changelog": "SuperTrend"
+}

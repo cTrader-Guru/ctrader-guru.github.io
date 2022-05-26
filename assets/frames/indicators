@@ -20,7 +20,8 @@
 
                 "box-info",
                 "ma-color-candles",
-                "demarker"
+                "demarker",
+                "supertrend"
 
             ];
 
