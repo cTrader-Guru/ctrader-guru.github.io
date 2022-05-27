@@ -2,58 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://ctrader-guru.github.io/</loc>
-      <lastmod>2022-05-24T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-24</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=box-info&amp;category=indicators</loc>
-      <lastmod>2022-05-24T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-24</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=trendline-power&amp;category=cbots</loc>
-      <lastmod>2022-05-24T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-24</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=engulfing&amp;category=cbots</loc>
-      <lastmod>2022-05-24T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-24</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=ma-color-candles&amp;category=indicators</loc>
-      <lastmod>2022-05-25T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-25</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=price-action-advisor&amp;category=cbots</loc>
-      <lastmod>2022-05-25T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-25</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=ema-power&amp;category=cbots</loc>
-      <lastmod>2022-05-25T17:10:18+00:00</lastmod>
+      <lastmod>2022-05-25</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=demarker&amp;category=indicators</loc>
-      <lastmod>2022-05-26T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-26</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=supertrend&amp;category=indicators</loc>
-      <lastmod>2022-05-26T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-26</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=trenko&amp;category=indicators</loc>
-      <lastmod>2022-05-26T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-26</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=zigzag&amp;category=indicators</loc>
-      <lastmod>2022-05-26T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-26</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=indicator-alert&amp;category=indicators</loc>
-      <lastmod>2022-05-27T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-27</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=custom-candle&amp;category=indicators</loc>
-      <lastmod>2022-05-27T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-27</lastmod>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=auto-drawing&amp;category=indicators</loc>
-      <lastmod>2022-05-27T16:10:18+00:00</lastmod>
+      <lastmod>2022-05-27</lastmod>
+      <changefreq>daily</changefreq>
    </url>
 </urlset>
