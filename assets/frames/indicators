@@ -23,7 +23,8 @@
                 "demarker",
                 "supertrend",
                 "trenko",
-                "zigzag"
+                "zigzag",
+                "indicator-alert"
 
             ];
 

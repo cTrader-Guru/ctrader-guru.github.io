@@ -1,0 +1,59 @@
+{
+
+    "unique": "indicator-alert",
+    "name": "Indicator Alert",
+    "short_description": "A very useful tool to be used only with oscillators or indicators that have a set range such as the RSI, MACD, ATR, etc.",
+    "tags": ["alert", "notification"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Indicator Alert x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Alert Source",
+            "content": "Select the indicator you have on the chart that you want to monitor"
+        },
+        {
+            "title": "Level Over",
+            "content": "Generally the overbought level, for example, for the RSI might be 80 or 90"
+        },
+        {
+            "title": "Level Under",
+            "content": "Generally the oversold level, for example, for the RSI would be 30 or 20"
+        },
+        {
+            "title": "Flag Reset",
+            "content": "The reset level, for example for the RSI if the overbought level is 80 and the value of this parameter is 10 then it will start to reconsider an overbought alert only when it returns to 70"
+        },
+        {
+            "title": "Alert PopUp?",
+            "content": "You can enable a message box on the computer in use"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
+        },
+        {
+            "title": "Enabled ?",
+            "content": "Enable notifications to a webhook, next parameters must be changed"
+        },
+        {
+            "title": "API",
+            "content": "Replace with API endpoint"
+        },
+        {
+            "title": "POST params",
+            "content": "Replace with API POST params"
+        }
+    ],
+    "twitter_changelog": "IndicatorAlert"
+}
