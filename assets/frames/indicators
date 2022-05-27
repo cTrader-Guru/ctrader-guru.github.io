@@ -24,7 +24,8 @@
                 "supertrend",
                 "trenko",
                 "zigzag",
-                "indicator-alert"
+                "indicator-alert",
+                "custom-candle"
 
             ];
 

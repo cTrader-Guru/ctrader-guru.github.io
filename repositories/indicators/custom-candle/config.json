@@ -1,0 +1,67 @@
+{
+
+    "unique": "custom-candle",
+    "name": "Custom Candle",
+    "short_description": "You can represent a candle from any timeframe greater than the current one, for example if you are on a 15-minute timeframe you can draw a daily candle.",
+    "tags": ["candle"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Custom Candle x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Candle TimeFrame",
+            "content": "La candela che vuoi disegnare, deve essere maggiore del timeframe corrente"
+        },
+        {
+            "title": "Candle Mode",
+            "content": "Puoi sceglie per visualizzare solo Open/Close or High/Low"
+        },
+        {
+            "title": "Candle To Show",
+            "content": "The number of candles to be drawn on the chart"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Line Style Box",
+            "content": "The type of box perimeter line representing the candle"
+        },
+        {
+            "title": "Tichness",
+            "content": "The thickness of the line in the previous parameter"
+        },
+        {
+            "title": "High/Open/Long Color",
+            "content": "The bullish color"
+        },
+        {
+            "title": "Low/Close/Short Color",
+            "content": "The bearish color"
+        },
+        {
+            "title": "Opacity",
+            "content": "Adjusts transparency"
+        },
+        {
+            "title": "Boxed ?",
+            "content": "You can draw a box or just its levels"
+        },
+        {
+            "title": "Fill Box ?",
+            "content": "You can fill the candle with the same color or leave it empty"
+        }
+    ],
+    "twitter_changelog": "CustomCandle"
+}
