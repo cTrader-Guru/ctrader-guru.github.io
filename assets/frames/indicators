@@ -25,7 +25,8 @@
                 "trenko",
                 "zigzag",
                 "indicator-alert",
-                "custom-candle"
+                "custom-candle",
+                "auto-drawing"
 
             ];
 

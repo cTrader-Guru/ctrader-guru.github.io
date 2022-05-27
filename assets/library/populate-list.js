@@ -10,7 +10,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
         SHOP_CONTAINER = '#shop-container',
         LOADING = MAIN + ' div.ui.search',
         TWITTER_CHANGELOG = "https://twitter.com/search?q=(%23{hashname}%20AND%20%23changelog)%20(from%3A%40cTraderGuru)&src=typed_query&f=live",
-        POPULATE_STEP = 3
+        POPULATE_STEP = 5
 
     // --> Search params to open request product
     const

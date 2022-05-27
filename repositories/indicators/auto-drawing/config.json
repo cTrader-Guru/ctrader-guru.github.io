@@ -1,0 +1,55 @@
+{
+
+    "unique": "auto-drawing",
+    "name": "Auto Drawing",
+    "short_description": "An assistant to draw some of the most useful and used tools ever, such as Fibonacci, the linear regression channel, etc.... Press ctrl + drag on chart",
+    "tags": ["fibonacci", "linear regression", "support", "resistance", "trend"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.gif"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Auto Drawing x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Deviation Period",
+            "content": "The period then the bars for calculating the linear regression"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color",
+            "content": "You can choose the font colour"
+        },
+        {
+            "title": "Extend To Infinity ?",
+            "content": "You can enable the extension of the trend line to infinity"
+        },
+        {
+            "title": "Panel BG Color",
+            "content": "The background color of popup"
+        },
+        {
+            "title": "Drawings Color",
+            "content": "The color of what you draw on the graph"
+        },
+        {
+            "title": "Selection Color",
+            "content": "The background color of the selection panel"
+        },
+        {
+            "title": "Opacity",
+            "content": "Adjusts transparency"
+        }
+    ],
+    "twitter_changelog": "AutoDrawing"
+}
