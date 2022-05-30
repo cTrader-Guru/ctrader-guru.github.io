@@ -72,7 +72,12 @@
    </url>
    <url>
       <loc>https://ctrader-guru.github.io/?repository=trades-to-webhook&amp;category=cbots</loc>
-      <lastmod>2022-05-29</lastmod>
+      <lastmod>2022-05-30</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>https://ctrader-guru.github.io/?repository=market-watch&amp;category=indicators</loc>
+      <lastmod>2022-05-30</lastmod>
       <changefreq>daily</changefreq>
    </url>
 </urlset>

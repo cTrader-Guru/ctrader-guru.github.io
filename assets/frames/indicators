@@ -26,7 +26,8 @@
                 "zigzag",
                 "indicator-alert",
                 "custom-candle",
-                "auto-drawing"
+                "auto-drawing",
+                "market-watch"
 
             ];
 

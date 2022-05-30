@@ -1,0 +1,43 @@
+{
+
+    "unique": "market-watch",
+    "name": "Market Watch",
+    "short_description": "A complete view of market trends, you can choose up to 10 pairs to monitor. Correlations will appear more evident.",
+    "tags": ["trend", "correlation"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png", "2.jpg"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Market Watch x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "EMA",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used for the calculation"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Show Labels?",
+            "content": "With this option you will be able to hide the Labels"
+        },
+        {
+            "title": "Symbols",
+            "content": ""
+        },
+        {
+            "title": "1° Symbol;....;10° Symbol",
+            "content": "List of symbols to be monitored"
+        }
+    ],
+    "twitter_changelog": "MarketWatch"
+}
