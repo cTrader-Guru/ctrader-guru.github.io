@@ -23,7 +23,8 @@
                 "price-action-advisor",
                 "ema-power",
                 "trades-to-webhook",
-                "adrenaline"
+                "adrenaline",
+                "extend-cbot"
 
             ];
 
