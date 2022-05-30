@@ -27,7 +27,8 @@
                 "indicator-alert",
                 "custom-candle",
                 "auto-drawing",
-                "market-watch"
+                "market-watch",
+                "market-watch-correlated"
 
             ];
 

@@ -1,0 +1,47 @@
+{
+
+    "unique": "market-watch-correlated",
+    "name": "Market Watch Correlated",
+    "short_description": "A complete view of market trends, you can choose up to 10 pairs to monitor. Correlations will appear more evident.",
+    "tags": ["trend", "correlation"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Market Watch Correlated x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "EMA",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used for the calculation"
+        },
+        {
+            "title": "Symbol",
+            "content": ""
+        },
+        {
+            "title": "Correlated",
+            "content": "The pair you want to monitor"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Show Labels?",
+            "content": "With this option you will be able to hide the Labels"
+        },
+        {
+            "title": "Label Color",
+            "content": "The color of the Label text"
+        }
+    ],
+    "twitter_changelog": "MarketWatchCorrelated"
+}
