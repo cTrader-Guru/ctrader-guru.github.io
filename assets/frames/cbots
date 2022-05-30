@@ -21,7 +21,8 @@
                 "trendline-power",
                 "engulfing",
                 "price-action-advisor",
-                "ema-power"
+                "ema-power",
+                "trades-to-webhook"
 
             ];
 

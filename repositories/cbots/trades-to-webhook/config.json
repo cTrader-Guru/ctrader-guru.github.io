@@ -1,0 +1,63 @@
+{
+
+    "unique": "trades-to-webhook",
+    "name": "Trades To Webhook",
+    "short_description": "Share your trades with your favorite webhooks, like Telegram. You can choose to share openings; closings; changes; you can choose which pair or which label.",
+    "tags": ["Webhoo", "Share", "Telegram"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": [],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Trades To Webhook x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Symbols",
+            "content": ""
+        },
+        {
+            "title": "Only This ?",
+            "content": "You can choose to monitor only the pair in which the cBot was started"
+        },
+        {
+            "title": "Labels",
+            "content": ""
+        },
+        {
+            "title": "empty = all | label1,label2,label3",
+            "content": "If the value is empty all labels will be monitored, otherwise only the inserted labels separated with a comma will be monitored"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
+        },
+        {
+            "title": "EndPoint",
+            "content": "The url of the API service"
+        },
+        {
+            "title": "POST",
+            "content": "The POST parameters to be sent, in the placeholder {0} will be inserted the formatted message text"
+        },
+        {
+            "title": "Messages",
+            "content": ""
+        },
+        {
+            "title": "Opened (empty = disabled)",
+            "content": "The message to be sent if open, if empty nothing is sent. I recommend that you try a standard message to check the placeholders."
+        },
+        {
+            "title": "Modified (empty = disabled)",
+            "content": "The message to be sent if modified, if empty nothing is sent. I recommend that you try a standard message to check the placeholders."
+        },
+        {
+            "title": "Closed (empty = disabled)",
+            "content": "The message to be sent if closed, if empty nothing is sent. I recommend that you try a standard message to check the placeholders."
+        }
+    ],
+    "twitter_changelog": "TradesToWebhook"
+}
