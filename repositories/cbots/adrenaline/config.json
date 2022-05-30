@@ -1,0 +1,107 @@
+{
+
+    "unique": "adrenaline",
+    "name": "Adrenaline",
+    "short_description": "One of the most popular scalpers in the community, it has been made free and open source because it is time for everyone to use it.",
+    "tags": ["scalper", "scalping", "adaptive martingala"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png", "2.png", "3.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Adrenaline x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Label (Magic Name)",
+            "content": "When it opens a trade it marks it with this label"
+        },
+        {
+            "title": "Preset information",
+            "content": "Some references to the preset in use, useful if you want to specify a specific back test period"
+        },
+        {
+            "title": "Strategy",
+            "content": ""
+        },
+        {
+            "title": "Max Cross Coworking (zero = unlimited)",
+            "content": "When used with multiple pairs limits the input to a predetermined number of simultaneous trades"
+        },
+        {
+            "title": "Mode",
+            "content": "You can choose to use moderate or aggressive logic"
+        },
+        {
+            "title": "Stop Loss",
+            "content": "The number of pips for the stop loss, e.g. 10 equals 10 pips"
+        },
+        {
+            "title": "Take Profit",
+            "content": "The number of pips for the take profit, e.g. 10 equals 10 pips"
+        },
+        {
+            "title": "Lots",
+            "content": "The number of lots to be used for opening the first trade."
+        },
+        {
+            "title": "Balance Multiplier (zero = disabled; es. 0.01 each € 1000 )",
+            "content": "For every 1000€ these lots are added"
+        },
+        {
+            "title": "Filters",
+            "content": ""
+        },
+        {
+            "title": "Max Spread allowed",
+            "content": "Max Spread allowed : Only triggers within a certain limit are considered, e.g. 1.5 will only consider spreads equal to or less than 1.5 pips"
+        },
+        {
+            "title": "Max GAP Allowed (pips)",
+            "content": "Protects against high volatility, e.g. if the value is 1 then all trades that have a GAP greater than 1 will be ignored, GAP is the distance between the close of the previous candle and the open of the current one which must not exceed 1 pip"
+        },
+        {
+            "title": "Time Zone",
+            "content": ""
+        },
+        {
+            "title": "Pause over this time",
+            "content": "This parameter identifies the start time of the pause, e.g. 18.0 the cBot will no longer open positions from 18:00"
+        },
+        {
+            "title": "Pause under this time",
+            "content": "Marks the end of the pause, e.g. 8.20 the cBot will start opening new trades from 08:20"
+        },
+        {
+            "title": "Adaptive Martingale",
+            "content": ""
+        },
+        {
+            "title": "Multiplier",
+            "content": "If the value of this parameter is zero then the control will not be considered even if enabled, it is the number of times the volume of the previous trade is multiplied to create exponentiality as positions increase"
+        },
+        {
+            "title": "Max Loss Before Multiplier (zero = always)",
+            "content": "The number of losses before it begins to multiply exponentially"
+        },
+        {
+            "title": "Max Consecutive Loss (zero = unlimited)",
+            "content": "The maximum number of consecutive losses before stopping the martingale"
+        },
+        {
+            "title": "Force Index",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used for calculation."
+        },
+        {
+            "title": "Trigger value",
+            "content": "The level that if exceeded triggers the trigger"
+        }
+    ],
+    "twitter_changelog": "Adrenaline"
+}

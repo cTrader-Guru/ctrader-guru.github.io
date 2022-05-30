@@ -3,7 +3,7 @@
     "unique": "trades-to-webhook",
     "name": "Trades To Webhook",
     "short_description": "Share your trades with your favorite webhooks, like Telegram. You can choose to share openings; closings; changes; you can choose which pair or which label.",
-    "tags": ["Webhoo", "Share", "Telegram"],
+    "tags": ["webhook", "share", "telegram"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
     "params": [{

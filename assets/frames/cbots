@@ -22,7 +22,8 @@
                 "engulfing",
                 "price-action-advisor",
                 "ema-power",
-                "trades-to-webhook"
+                "trades-to-webhook",
+                "adrenaline"
 
             ];
 

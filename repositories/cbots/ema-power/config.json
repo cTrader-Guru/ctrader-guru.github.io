@@ -3,7 +3,7 @@
     "unique": "ema-power",
     "name": "EMA Power",
     "short_description": "Two simple EMAs create a solid and simple strategy, nothing to understand enters each cross, with extraordinary management.",
-    "tags": ["EMA", "Moving Average"],
+    "tags": ["ema", "moving average"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.png", "2.png"],
     "params": [{
