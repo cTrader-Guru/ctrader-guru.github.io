@@ -25,7 +25,8 @@
                 "trades-to-webhook",
                 "adrenaline",
                 "extend-cbot",
-                "bifrost"
+                "bifrost",
+                "resource-monitor"
 
             ];
 

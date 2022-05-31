@@ -1,0 +1,71 @@
+{
+
+    "unique": "resource-monitor",
+    "name": "Resource Monitor",
+    "short_description": "Some VPSs restart when a threshold of resource usage is exceeded, with this tool you will be able to monitor any abnormal resource usage.",
+    "tags": ["cpu", "ram"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Resource Monitor x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Monitoring",
+            "content": ""
+        },
+        {
+            "title": "Seconds To Check",
+            "content": "The interval in seconds of the resource control"
+        },
+        {
+            "title": "CPU",
+            "content": ""
+        },
+        {
+            "title": "Trigger (%)",
+            "content": "The percentage above which notification is triggered"
+        },
+        {
+            "title": "Reset (%)",
+            "content": "After the notification if it goes back this value resets the trigger and prepares for a new notification"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
+        },
+        {
+            "title": "Enabled?",
+            "content": "Enable sending notifications, be careful to enter correct values in the following parameters"
+        },
+        {
+            "title": "API",
+            "content": "The url of the API service you want to send notifications to."
+        },
+        {
+            "title": "POST params",
+            "content": "The information you want to send to the API service"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color",
+            "content": "The color of the banner text"
+        },
+        {
+            "title": "Vertical Position",
+            "content": "The vertical position of the banner"
+        },
+        {
+            "title": "Horizontal Position",
+            "content": "The horizontal position of the banner"
+        }
+    ],
+    "twitter_changelog": "ResourceMonitor"
+}
