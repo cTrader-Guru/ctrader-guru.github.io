@@ -24,7 +24,8 @@
                 "ema-power",
                 "trades-to-webhook",
                 "adrenaline",
-                "extend-cbot"
+                "extend-cbot",
+                "bifrost"
 
             ];
 
