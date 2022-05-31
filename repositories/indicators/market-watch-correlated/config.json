@@ -2,7 +2,7 @@
 
     "unique": "market-watch-correlated",
     "name": "Market Watch Correlated",
-    "short_description": "A complete view of market trends, you can choose up to 10 pairs to monitor. Correlations will appear more evident.",
+    "short_description": "Unlike Market Watch you can overlay an unlimited number of pairs directly on the chart.",
     "tags": ["trend", "correlation"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.png"],
