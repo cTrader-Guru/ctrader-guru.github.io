@@ -1,0 +1,51 @@
+{
+
+    "unique": "linear-regression",
+    "name": "Linear Regression",
+    "short_description": "Calculate the linear regression based on the chosen period by drawing a channel with which to interpret the trend.",
+    "tags": ["channel"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Linear Regression x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars for the regression calculation"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color",
+            "content": "You can choose the color of the channel"
+        },
+        {
+            "title": "Line",
+            "content": "You can choose the thickness of the channel lines"
+        },
+        {
+            "title": "Standard deviation",
+            "content": "You can choose whether to display the standard deviation"
+        },
+        {
+            "title": "Center",
+            "content": "You can choose whether to display the center of channel"
+        },
+        {
+            "title": "Channel",
+            "content": "You can choose whether to display the extern line of channel"
+        }
+    ],
+    "twitter_changelog": "LinearRegression"
+}

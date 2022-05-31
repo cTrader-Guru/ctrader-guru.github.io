@@ -28,7 +28,8 @@
                 "custom-candle",
                 "auto-drawing",
                 "market-watch",
-                "market-watch-correlated"
+                "market-watch-correlated",
+                "linear-regression"
 
             ];
 
