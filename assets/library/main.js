@@ -35,4 +35,7 @@
             .indexOf(m[3].toUpperCase()) >= 0;
     };
 
+    if (location.hostname != '127.0.0.1' && location.hostname != 'localhost')
+        $("<script src='https://code.jivo.ru/widget/2YQxqNiaXk' async></script>").appendTo('body');
+
 })(jQuery);
