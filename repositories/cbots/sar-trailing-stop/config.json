@@ -1,0 +1,35 @@
+{
+
+    "unique": "sar-trailing-stop",
+    "name": "SAR Trailing Stop",
+    "short_description": "A real classic, to follow the deviation of the Parabolic SAR for trailing management, in fact it is the only indicator that makes sense to use it for this.",
+    "tags": ["trailing", "parabolic sar"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": [],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "SAR Trailing Stop x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Min AF",
+            "content": "You can enter the minimum value of the SAR acceleration factor"
+        },
+        {
+            "title": "Max AF",
+            "content": "You can enter the maximum, value of the SAR acceleration factor"
+        },
+        {
+            "title": "Auto Stop ?",
+            "content": "You can choose to stop cbot in case there are no more trades in the market"
+        }
+    ],
+    "twitter_changelog": "SARTrailingStop"
+}

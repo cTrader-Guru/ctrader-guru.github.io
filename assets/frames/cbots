@@ -28,7 +28,8 @@
                 "bifrost",
                 "resource-monitor",
                 "money-break-even",
-                "price-action-trailing-stop"
+                "price-action-trailing-stop",
+                "sar-trailing-stop"
 
             ];
 
