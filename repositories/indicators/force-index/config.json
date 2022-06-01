@@ -1,0 +1,27 @@
+{
+
+    "unique": "force-index",
+    "name": "Force Index",
+    "short_description": "Of all oscillators, it is the only one used to intercept very strong volatilities, used more in scalping strategies.",
+    "tags": ["scalping", "volatility"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Force Index x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used to calculate the force index"
+        }
+    ],
+    "twitter_changelog": "ForceIndex"
+}

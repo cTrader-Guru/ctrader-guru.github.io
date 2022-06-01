@@ -29,7 +29,8 @@
                 "auto-drawing",
                 "market-watch",
                 "market-watch-correlated",
-                "linear-regression"
+                "linear-regression",
+                "force-index"
 
             ];
 
