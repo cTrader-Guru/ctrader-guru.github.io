@@ -1,0 +1,79 @@
+{
+
+    "unique": "money-break-even",
+    "name": "Money Break Even",
+    "short_description": "An indispensable tool, it secures profits and allows you to customize the management of one or more trades.",
+    "tags": ["management"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Money Break Even x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Mode",
+            "content": "You can choose whether to monitor net profit in money or as a percentage to balance"
+        },
+        {
+            "title": "Net Profit Activation ( $ | % )",
+            "content": "Depending on the 'Mode' chosen will be the limit beyond which the break even will be activated"
+        },
+        {
+            "title": "Net Profit Target ( $ | % )",
+            "content": "After being activated if it reaches this value it closes everything according to the chosen logic"
+        },
+        {
+            "title": "Options",
+            "content": ""
+        },
+        {
+            "title": "All Cross ?",
+            "content": "You can choose to monitor the net profit of the current pair or all pairs"
+        },
+        {
+            "title": "Auto Stop ?",
+            "content": "If there are no more trades it stops the cbot, if this item is enabled and there are no trades at market the cbot will not start"
+        },
+        {
+            "title": "Remove Pending Orders ?",
+            "content": "In case of break even you can also remove pending orders"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color Target Logic",
+            "content": "The color of the box if the logic is of target type, e.g., activation and target equal"
+        },
+        {
+            "title": "Color Positive Logic",
+            "content": "The color of the box if the logic is positive type, e.g. activation 10% and target 3%"
+        },
+        {
+            "title": "Color Negative Logic",
+            "content": "The color of the box if the logic is negative type, e.g. activation -3% and target 0%"
+        },
+        {
+            "title": "Color Activated",
+            "content": "The color if break even is activated"
+        },
+        {
+            "title": "Vertical Position",
+            "content": "The vertical position of the information box"
+        },
+        {
+            "title": "Horizontal Position",
+            "content": "The horizontal position of the information box"
+        }
+    ],
+    "twitter_changelog": "MoneyBreakEven"
+}

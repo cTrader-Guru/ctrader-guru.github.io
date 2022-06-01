@@ -26,7 +26,8 @@
                 "adrenaline",
                 "extend-cbot",
                 "bifrost",
-                "resource-monitor"
+                "resource-monitor",
+                "money-break-even"
 
             ];
 
