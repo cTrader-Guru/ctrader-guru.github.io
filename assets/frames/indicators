@@ -30,7 +30,8 @@
                 "market-watch",
                 "market-watch-correlated",
                 "linear-regression",
-                "force-index"
+                "force-index",
+                "amazing-price-action"
 
             ];
 

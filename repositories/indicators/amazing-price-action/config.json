@@ -1,0 +1,31 @@
+{
+
+    "unique": "amazing-price-action",
+    "name": "Amazing Price Action",
+    "short_description": "One way to see the trend with different eyes, the price action calculation is accurate and precise, it would be unwise to avoid following the price action.",
+    "tags": ["trend"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Amazing Price Action x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used to calculate the force index"
+        },
+        {
+            "title": "Mode",
+            "content": "You can choose to do the calculation between Close or High/Low"
+        }
+    ],
+    "twitter_changelog": "AmazingPriceAction"
+}
