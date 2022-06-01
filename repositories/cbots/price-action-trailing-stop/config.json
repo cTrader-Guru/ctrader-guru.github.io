@@ -1,0 +1,31 @@
+{
+
+    "unique": "price-action-trailing-stop",
+    "name": "Price Action Trailing Stop",
+    "short_description": "Another way to approach trailing, using price action just like the real professionals.",
+    "tags": ["trailing", "price action"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": [],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Price Action Trailing Stop x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Trailing",
+            "content": ""
+        },
+        {
+            "title": "Mode",
+            "content": "You can choose between High/Low and Close"
+        },
+        {
+            "title": "Period",
+            "content": "The bar used to move the stop loss"
+        }
+    ],
+    "twitter_changelog": "PriceActionTrailingStop"
+}

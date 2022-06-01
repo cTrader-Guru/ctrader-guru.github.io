@@ -27,7 +27,8 @@
                 "extend-cbot",
                 "bifrost",
                 "resource-monitor",
-                "money-break-even"
+                "money-break-even",
+                "price-action-trailing-stop"
 
             ];
 
