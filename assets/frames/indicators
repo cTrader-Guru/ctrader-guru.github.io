@@ -31,7 +31,8 @@
                 "market-watch-correlated",
                 "linear-regression",
                 "force-index",
-                "amazing-price-action"
+                "amazing-price-action",
+                "gold-pivot"
 
             ];
 

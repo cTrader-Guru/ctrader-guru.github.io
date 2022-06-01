@@ -1,0 +1,59 @@
+{
+
+    "unique": "gold-pivot",
+    "name": "Gold Pivot",
+    "short_description": "It calculates the proportion of the previous candle, for example if you choose Daily you will have the proportion of the previous day's pivot at 61.8.",
+    "tags": ["pivot", "swing"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Gold Pivot x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Time Frame",
+            "content": "The time frame with which to calculate the pivot"
+        },
+        {
+            "title": "Candle Show",
+            "content": "The number of candles to be displayed according to the chosen time frame"
+        },
+        {
+            "title": "Show Label ?",
+            "content": "You can choose not to display the labels"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Line Style",
+            "content": "The type of line to be drawn on the graph"
+        },
+        {
+            "title": "Tickness",
+            "content": "The thickness of the line to be drawn"
+        },
+        {
+            "title": "Pivot Color",
+            "content": "The color of the Pivot"
+        },
+        {
+            "title": "Bullish Color",
+            "content": "The bullish color"
+        },
+        {
+            "title": "Bearich Color",
+            "content": "The bearish color"
+        }
+    ],
+    "twitter_changelog": "GoldPivot"
+}
