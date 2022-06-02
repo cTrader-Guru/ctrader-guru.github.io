@@ -5,7 +5,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.082",
+        Version: "1.083",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -122,6 +122,9 @@
             }
             return text;
 
+        },
+        ConvertTZ(date, tzString) {
+            return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", { timeZone: tzString }));
         }
 
     };

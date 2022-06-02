@@ -35,7 +35,19 @@
             .indexOf(m[3].toUpperCase()) >= 0;
     };
 
-    if (location.hostname != '127.0.0.1' && location.hostname != 'localhost')
+    const
+        IsNotLocalhost = location.hostname != '127.0.0.1' && location.hostname != 'localhost',
+        RomeTZ = CG.ConvertTZ(new Date, "Europe/Rome"),
+        RomeH = RomeTZ.getHours(),
+        RomeM = RomeTZ.getMinutes(),
+        CurrentRomeTime = RomeH + ":" + RomeM,
+        OperatorStart = "09:00",
+        OperatorStop = "17:00",
+        OperatorDayWork = [1, 2, 3, 4, 5],
+        IsOperatorTimeWork = (CurrentRomeTime >= OperatorStart && CurrentRomeTime <= OperatorStop),
+        IsOperatorDayWork = OperatorDayWork.indexOf(RomeTZ.getDay()) > -1;
+
+    if (IsNotLocalhost && IsOperatorDayWork && IsOperatorTimeWork)
         $("<script src='https://code.jivo.ru/widget/2YQxqNiaXk' async></script>").appendTo('body');
 
 })(jQuery);
