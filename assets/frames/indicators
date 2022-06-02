@@ -32,7 +32,8 @@
                 "linear-regression",
                 "force-index",
                 "amazing-price-action",
-                "gold-pivot"
+                "gold-pivot",
+                "scalfibo"
 
             ];
 

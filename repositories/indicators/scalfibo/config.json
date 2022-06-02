@@ -1,0 +1,91 @@
+{
+
+    "unique": "scalfibo",
+    "name": "ScalFibo",
+    "short_description": "An indispensable assistant to manage scalping strategy with Fibonacci. Use intraday retracement to intercept a clear and clean trigger.",
+    "tags": ["scalping", "swing"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg", "2.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "ScalFibo x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Strategy",
+            "content": ""
+        },
+        {
+            "title": "Average Period",
+            "content": "The number of bars to be considered for averaging"
+        },
+        {
+            "title": "Min Average",
+            "content": "The minimum value of the average to be considered for the implementation of the strategy"
+        },
+        {
+            "title": "Min Bars for Activation",
+            "content": "The minimum number of candles to be considered before the trigger can be activated"
+        },
+        {
+            "title": "Max Bars for Activation",
+            "content": "The maximum number of candles to be considered after the trigger can be deactivated"
+        },
+        {
+            "title": "True K",
+            "content": "The number of pips added to the high or low to consider a new high or low, the price must close over"
+        },
+        {
+            "title": "Time Start",
+            "content": "The start of the strategy"
+        },
+        {
+            "title": "Time Stop",
+            "content": "The end of the strategy"
+        },
+        {
+            "title": "Alerts",
+            "content": ""
+        },
+        {
+            "title": "On Trade Opportunity?",
+            "content": "You can choose to activate the popup when a trade opportunity start"
+        },
+        {
+            "title": "On Fibonacci Drawing?",
+            "content": "You can choose to activate the popup when Fibonacci is drawn on the chart"
+        },
+        {
+            "title": "On Strategy Hit?",
+            "content": "You can choose to activate the popup when the strategy conditions are active"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
+        },
+        {
+            "title": "Enabled?",
+            "content": "You can choose whether to enable sending a message to a webhook, the following parameters must be replaced with the correct values"
+        },
+        {
+            "title": "API",
+            "content": "URL of API service"
+        },
+        {
+            "title": "POST params",
+            "content": "The data to be sent to the webhook"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "General",
+            "content": "The parameter names define the significance of the values"
+        }
+    ],
+    "twitter_changelog": "ScalFibo"
+}
