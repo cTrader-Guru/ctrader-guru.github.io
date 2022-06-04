@@ -4,6 +4,6 @@ This site uses some free and open-source resources, on this page we will list al
 
 - [Fomantic-UI](https://fomantic-ui.com/)  
 - [GetRevue Newsletters](https://www.getrevue.co/)  
-- [Lightbox2](https://lokeshdhakar.com/projects/lightbox2/)  
+- [GlightBox](https://github.com/biati-digital/glightbox)  
 - [ZeroMQ](https://zeromq.org/)  
 - [Jivo Chat](https://www.jivochat.com/)

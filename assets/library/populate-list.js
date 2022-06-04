@@ -195,15 +195,28 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                             $('<a>', {
                                 href: success[0].path + src,
-                                target: '_blank',
-                                class: 'ui small image',
-                                "data-lightbox": "light"
+                                class: 'ui small image glightbox',
+                                "data-gallery": "imagesandvideos"
                             }).append($('<img>', {
                                 src: success[0].path + src,
                                 alt: "Product description " + i
                             })).appendTo(PRODUCT_PAGE + ' .images.list');
 
                         });
+                        success[0].youtube.forEach((video_code, i) => {
+
+                            $('<a>', {
+                                href: "https://www.youtube.com/watch?v=" + video_code,
+                                class: 'ui small image glightbox',
+                                "data-gallery": "imagesandvideos"
+                            }).append($('<img>', {
+                                src: "https://i3.ytimg.com/vi/[video_code]/maxresdefault.jpg".replace("[video_code]", video_code),
+                                alt: "Product description " + i
+                            })).appendTo(PRODUCT_PAGE + ' .images.list');
+
+                        });
+
+                        const lightbox = GLightbox();
 
                         $(PRODUCT_PAGE + ' .row.tags').html("");
                         success[0].tags.forEach(tag => {
