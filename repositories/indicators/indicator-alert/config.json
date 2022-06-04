@@ -2,7 +2,7 @@
 
     "unique": "indicator-alert",
     "name": "Indicator Alert",
-    "short_description": "A very useful tool to be used only with oscillators or indicators that have a set range such as the RSI, MACD, ATR, etc.",
+    "short_description": "A very useful tool to be used only with oscillators or indicators that have a set range such as the RSI, MACD, ATR, etc. This tool has been surpassed by 'Trigger', look for it in the indicators.",
     "tags": ["alert", "notification"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.png"],

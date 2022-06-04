@@ -355,3 +355,7 @@ img.main-logo {
 .load.more {
     margin: 3rem 0rem 0rem 0rem!important;
 }
+
+#lightbox .lb-close {
+    display: none!important;
+}

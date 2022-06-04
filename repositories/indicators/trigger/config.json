@@ -1,0 +1,83 @@
+{
+
+    "unique": "trigger",
+    "name": "Trigger",
+    "short_description": "The first tool that offers you the possibility to be notified with any indicator, yes you got it right ANY!",
+    "tags": ["alert", "notification"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Trigger x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Monitoring",
+            "content": ""
+        },
+        {
+            "title": "Check logic every",
+            "content": "You can choose whether to check for notifications every tick or when a new bar opens."
+        },
+        {
+            "title": "Reset after these bars",
+            "content": "After notification, the trigger for that logic is reset after this number of bars"
+        },
+        {
+            "title": "First/Second Logic",
+            "content": ""
+        },
+        {
+            "title": "Enabled?",
+            "content": "You can disable the logic without resetting the parameters"
+        },
+        {
+            "title": "'A' Trigger when this value",
+            "content": "Source reference 'A' to be checked"
+        },
+        {
+            "title": "Is",
+            "content": "You can choose which logic to adopt for comparison"
+        },
+        {
+            "title": "'B' Than this other value",
+            "content": "Source reference 'B' to be checked"
+        },
+        {
+            "title": "'C' Or this level (greater than zero bypass 'B' )",
+            "content": "Used to define a level, such as for oscillators but also for prices, if the value is greater than zero the reference 'B' will be ignored"
+        },
+        {
+            "title": "With this message (empty = standard message)",
+            "content": "If left empty it will send a standard message, otherwise you can customize it"
+        },
+        {
+            "title": "PopUp",
+            "content": ""
+        },
+        {
+            "title": "Enabled?",
+            "content": "You can choose whether to display a popup on the local computer"
+        },
+        {
+            "title": "Webhook",
+            "content": ""
+        },
+        {
+            "title": "Enabled ?",
+            "content": "Enable notifications to a webhook, next parameters must be changed"
+        },
+        {
+            "title": "EndPoint",
+            "content": "Replace with API endpoint"
+        },
+        {
+            "title": "POST",
+            "content": "Replace with API POST params"
+        }
+    ],
+    "twitter_changelog": "Trigger"
+}
