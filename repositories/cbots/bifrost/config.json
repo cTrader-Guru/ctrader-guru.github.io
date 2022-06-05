@@ -3,7 +3,7 @@
     "unique": "bifrost",
     "name": "Bifrost",
     "short_description": "The first copy trading infrastructure that links cTrader/MT4/MT5, totally free but not open source (for now). Become a Sponsor if you want this project to become open source, support us.",
-    "tags": ["metatrader", "mt4", "mt5", "copy trading", "zeromq"],
+    "tags": ["metatrader", "mt4", "mt5", "copy trading", "zeromq", "without source"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
     "params": [{
