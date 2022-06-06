@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://ctrader-guru.github.io/sitemap.xml
+Sitemap: https://ctrader.guru/sitemap.xml

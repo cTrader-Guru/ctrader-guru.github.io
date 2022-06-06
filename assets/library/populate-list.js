@@ -179,10 +179,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         $("title").html("cTrader Guru | " + success[0].name);
 
                         $("meta[property='og:type']").attr('content', "og:product");
-                        $("meta[property='og:url']").attr('content', 'https://ctrader-guru.github.io/' + MyQueryString);
+                        $("meta[property='og:url']").attr('content', 'https://ctrader.guru/' + MyQueryString);
                         $("meta[property='og:title']").attr('content', "cTrader Guru | " + success[0].name);
                         $("meta[property='og:description']").attr('content', success[0].short_description);
-                        $("meta[property='og:image']").attr('content', 'https://ctrader-guru.github.io' + success[0].image_box);
+                        $("meta[property='og:image']").attr('content', 'https://ctrader.guru' + success[0].image_box);
 
                         $(PRODUCT_PAGE + ' a.togithub').attr('href', "https://github.com/cTrader-Guru/" + unique);
 
@@ -297,10 +297,10 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                     $("title").html("cTrader Guru | cBots, indicatos and tools for cTrader");
 
                     $("meta[property='og:type']").attr('content', "website");
-                    $("meta[property='og:url']").attr('content', 'https://ctrader-guru.github.io/');
+                    $("meta[property='og:url']").attr('content', 'https://ctrader.guru/');
                     $("meta[property='og:title']").attr('content', "All our cBot, indicators and tools are free and open source.");
                     $("meta[property='og:description']").attr('content', "We are the community where learning trading becomes easy, fun and automatic.");
-                    $("meta[property='og:image']").attr('content', 'https://ctrader-guru.github.io/assets/images/ctrader.guru.png');
+                    $("meta[property='og:image']").attr('content', 'https://ctrader.guru/assets/images/ctrader.guru.png');
 
                 }
 

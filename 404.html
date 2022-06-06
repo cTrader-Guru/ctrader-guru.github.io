@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Standard Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -10,17 +11,17 @@
     <meta name='description' content='All our cBot, indicators and tools are free and open source. We are the community where learning trading becomes easy, fun and automatic.' />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ctrader-guru.github.io/" />
+    <meta property="og:url" content="https://ctrader.guru/" />
     <meta property="og:site_name" content="cTrader Guru" />
     <meta property="og:title" content="All our cBot, indicators and tools are free and open source." />
     <meta property="og:description" content="We are the community where learning trading becomes easy, fun and automatic." />
-    <meta property="og:image" content="https://ctrader-guru.github.io/assets/images/ctrader.guru.png" />
+    <meta property="og:image" content="https://ctrader.guru/assets/images/ctrader.guru.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="All our cBot, indicators and tools are free and open source." />
     <meta name="twitter:site" content="cTraderGuru" />
     <meta name="twitter:description" content="We are the community where learning trading becomes easy, fun and automatic." />
-    <meta name="twitter:image" content="https://ctrader-guru.github.io/assets/images/ctrader.guru.png" />
+    <meta name="twitter:image" content="https://ctrader.guru/assets/images/ctrader.guru.png" />
     <meta name="twitter:creator" content="@ctraderguru" />
 
     <!-- Site Properities -->
@@ -54,6 +55,21 @@
     <!-- Fomantic and Custom JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+    <script>
+        $('body')
+            .toast({
+                position: 'top center',
+                showProgress: true,
+                dysplayTime: 5000,
+                showIcon: 'info',
+                message: "You will be redirected to the home within 5 seconds",
+                onHidden: () => {
+                    location.href = "/";
+                }
+            });
+    </script>
+
 </body>
 
 </html>
