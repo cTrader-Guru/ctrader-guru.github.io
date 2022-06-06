@@ -6,6 +6,7 @@
     "tags": ["metatrader", "mt4", "mt5", "copy trading", "zeromq", "without source"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
+    "youtube": ["Y3CV074hQTU"],
     "params": [{
             "title": "PROVIDER",
             "content": ""
