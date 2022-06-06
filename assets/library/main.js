@@ -48,7 +48,7 @@
         IsOperatorDayWork = OperatorDayWork.indexOf(RomeTZ.getDay()) > -1;
 
     if (IsNotLocalhost && IsOperatorDayWork && IsOperatorTimeWork)
-        $("<script src='https://code.jivo.ru/widget/2YQxqNiaXk' async></script>").appendTo('body');
+        $("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
 
     console.log("Today in Rome is the " + RomeTZ.getDay() + "° day of the week and now is " + CurrentRomeTime + ", the operator work in days " + OperatorDayWork.join('/') + " from " + OperatorStart + " to " + OperatorStop + ", then now is " + (IsOperatorDayWork && IsOperatorTimeWork ? "active." : "inactive."));
 
