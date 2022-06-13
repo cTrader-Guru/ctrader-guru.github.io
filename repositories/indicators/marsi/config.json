@@ -1,0 +1,47 @@
+{
+
+    "unique": "marsi",
+    "name": "MARSI",
+    "short_description": "Among the most widely used oscillators ever, an ingenious interpretation of the RSI with averages placed adhock",
+    "tags": ["oscillator", "average", "RSI"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.jpg"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "MARSI x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "MA",
+            "content": ""
+        },
+        {
+            "title": "MA Period",
+            "content": "The number of bars to be used for the calculation of the average"
+        },
+        {
+            "title": "MA Type",
+            "content": "The type of moving average"
+        },
+        {
+            "title": "MA Source",
+            "content": "The source of the data to be processed"
+        },
+        {
+            "title": "RSI",
+            "content": ""
+        },
+        {
+            "title": "RSI Period",
+            "content": "The number of bars to be used for the calculation of the RSI"
+        },
+        {
+            "title": "Fast period",
+            "content": "The number of bars to be used for the calculation of the fast RSI"
+        }
+    ],
+    "twitter_changelog": "MARSI"
+}
