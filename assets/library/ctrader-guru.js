@@ -5,7 +5,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.092",
+        Version: "1.093",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
