@@ -6,11 +6,11 @@
                 <h3 class="ui icon header intesta">
                     <i class="rss icon"></i>
                     <div class="content">
-                        Forex Signals
-                        <div class="sub header">Realtime service</div>
+                        Updates
+                        <div class="sub header">All our info</div>
                     </div>
                 </h3>
-                <a href="https://twitter.com/search?q=(%23Signal)%20(from%3AcTraderGuru)&src=saved_search_click&f=live" alt="Twitter signal" class="ui animated medium button blue" tabindex="0">
+                <a href="https://twitter.com/search?q=(from%3AcTraderGuru)&src=saved_search_click&f=live" alt="Twitter signal" class="ui animated medium button blue" tabindex="0">
                     <div class="visible content">
                         Twitter
                         <i class="twitter medium icon our singlas"></i>
@@ -19,17 +19,6 @@
                         <i class="right arrow icon"></i>
                     </div>
                 </a>
-
-                <a href="https://t.me/cTrader_Guru_Signal_And_Analysis" alt="Telegram channel" class="ui animated medium button teal" tabindex="0">
-                    <div class="visible content">
-                        Telegram
-                        <i class="telegram medium icon our singlas"></i>
-                    </div>
-                    <div class="hidden content">
-                        <i class="right arrow icon"></i>
-                    </div>
-                </a>
-
             </div>
             <div class="center aligned column">
                 <h3 class="ui icon header intesta">
