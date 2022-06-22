@@ -226,6 +226,7 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         });
 
                         _installComments();
+                        _installAdSenseRepo();
 
                         $('#sJZ3vntth').html('');
 
@@ -325,6 +326,27 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                 let disqus = data.replace(/PAGE_URL/g, "'" + location.href + "'").replace(/PAGE_IDENTIFIER/g, "'" + location.href + "'");
 
                 $(PRODUCT_PAGE + " .comments").html(disqus);
+
+            }
+        });
+
+    }
+
+    function _installAdSenseRepo() {
+
+        var $adsense_repo = $(PRODUCT_PAGE + " .ui.medium.rectangle.ad.repo");
+        $adsense_repo.html('');
+
+        $.ajax({
+            url: "/assets/frames/adsense-repo",
+            cache: true,
+            async: true,
+            dataType: 'html',
+            success: (data) => {
+
+                if (typeof(data) == 'undefined' || data.length < 1) return;
+
+                setTimeout(() => { $adsense_repo.html(data); }, 1000);
 
             }
         });
