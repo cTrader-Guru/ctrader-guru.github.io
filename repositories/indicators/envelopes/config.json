@@ -1,0 +1,27 @@
+{
+
+    "unique": "envelopes",
+    "name": "Envelopes",
+    "short_description": "By far among the easiest indicators to use, it is basically a simple average that draws a channel, which is very useful for intercepting swings.",
+    "tags": ["average", "channel"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Period",
+            "content": "The number of candles to be used for averaging"
+        },
+        {
+            "title": "Deviation",
+            "content": "A coefficient that scales the channel"
+        },
+        {
+            "title": "MA Type",
+            "content": "The type of average to be used for calculation"
+        }
+    ],
+    "twitter_changelog": "Envelopes"
+}
