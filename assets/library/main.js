@@ -34,7 +34,7 @@
         // --> At least one banner you must display
         if ($("[data-ad-status='filled']").length < 1) {
 
-            alert("This site offers free and open-source material, you don't even want to display a small advertisement? Disable your AdBlock for this site and you will help us offer tools for free.");
+            alert("This site offers free and open-source material, you don't even want to display a small advertisement? Disable your AdBlock for this site or allow advertisement and you will help us offer tools for free.");
             ev.stopPropagation();
             return false;
 
