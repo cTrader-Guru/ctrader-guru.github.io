@@ -5,6 +5,15 @@
 
     $("#version").html(CG.Version);
 
+    $(".brokers .menu .item").click((evt) => {
+
+        var broker = $(evt.target).attr("data-url") || "";
+        if (!broker || broker == "" || broker.trim().length == 0) return;
+
+        document.location.href = broker.trim();
+
+    });
+
     $('#shop-container .menu .item')
         .tab({
 

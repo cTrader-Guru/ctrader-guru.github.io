@@ -50,8 +50,14 @@ a:hover:not(.button, .item) {
     }
 }
 
+@media (max-width: 402px) {
+    .menu.brokers {
+        margin-top: 2rem!important;
+    }
+}
+
 #top-container {
-    padding: 3rem 0rem 0rem 0rem!important;
+    padding: 3rem 0rem 1rem 0rem!important;
 }
 
 img.main-logo {
@@ -354,4 +360,12 @@ img.main-logo {
 
 .load.more {
     margin: 3rem 0rem 0rem 0rem!important;
+}
+
+.menu.brokers {
+    margin-bottom: 0.4rem!important;
+}
+
+.button.become.sponsor {
+    padding: .78571429em 1.0em .78571429em 1.0em!important;
 }
