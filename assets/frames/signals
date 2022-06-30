@@ -10,10 +10,19 @@
                         <div class="sub header">All our info</div>
                     </div>
                 </h3>
-                <a href="https://twitter.com/search?q=(from%3AcTraderGuru)&src=saved_search_click&f=live" alt="Twitter signal" class="ui animated medium button blue" tabindex="0">
+                <a href="https://twitter.com/search?q=(from%3AcTraderGuru)&src=saved_search_click&f=live" alt="Twitter" class="ui animated medium button twitter" tabindex="0">
                     <div class="visible content">
                         Twitter
                         <i class="twitter medium icon our singlas"></i>
+                    </div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </a>
+                <a href="https://t.me/ctraderguru" alt="Telegram" class="ui animated medium button telegram" tabindex="0">
+                    <div class="visible content">
+                        Telegram
+                        <i class="telegram plane medium icon our singlas"></i>
                     </div>
                     <div class="hidden content">
                         <i class="right arrow icon"></i>
