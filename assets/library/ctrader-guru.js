@@ -5,7 +5,7 @@
     // --> cTrader Guru object
     window.CG = {
 
-        Version: "1.106",
+        Version: "1.107",
         LoadTemplate: (url, success, error) => {
 
             $.ajax({
@@ -61,7 +61,8 @@
                                 tags: config.tags,
                                 name: config.name,
                                 image_box: item_image,
-                                short_description: config.short_description,
+                                short_description: config.short_description || "",
+                                long_description: config.long_description || "",
                                 screenshots: config.screenshots || [],
                                 youtube: config.youtube || [],
                                 path: path,

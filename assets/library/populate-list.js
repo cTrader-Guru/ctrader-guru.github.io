@@ -188,7 +188,8 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
 
                         $(PRODUCT_PAGE + ' .3d.box').attr("src", success[0].image_box);
                         $(PRODUCT_PAGE + ' .repo.name').text(success[0].name);
-                        $(PRODUCT_PAGE + ' .short.description').html(success[0].short_description);
+                        $(PRODUCT_PAGE + ' .short.description').text(success[0].short_description);
+                        $(PRODUCT_PAGE + ' .long.description').html(success[0].long_description);
 
                         $(PRODUCT_PAGE + ' .images.list').html("");
                         success[0].screenshots.forEach((src, i) => {

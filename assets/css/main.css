@@ -369,3 +369,7 @@ img.main-logo {
 .button.become.sponsor {
     padding: .78571429em 1.0em .78571429em 1.0em!important;
 }
+
+.description.general .description {
+    margin-bottom: 1em!important;
+}

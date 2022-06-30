@@ -3,6 +3,7 @@
     "unique": "box-info",
     "name": "Box Info",
     "short_description": "Excellent utility for keeping profits and spreads under control at all times, to be used on any chart with any strategy, it is developed as an indicator so can be inserted and saved with any template.",
+    "long_description": "<p>I personally can't do without it, I think this tool should be natively included in cTrader, I have already made the report, hopefully it will be accepted.</p>",
     "tags": ["spread", "net profit", "antimartingala", "leverage", "drawdown"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.gif"],
