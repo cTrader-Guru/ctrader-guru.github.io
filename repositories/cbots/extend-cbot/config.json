@@ -27,6 +27,10 @@
             "content": ""
         },
         {
+            "title": "Loop Mode",
+            "content": "You can choose when to process the strategy loop, in the default version OnTimer processes the event queue every second"
+        },
+        {
             "title": "Open Trade Type",
             "content": "The type of trade you want to open, e.g. Buy positions only"
         },
