@@ -3,6 +3,7 @@
     "unique": "extend-cbot",
     "name": "Extend cBot",
     "short_description": "Concrete support for all programmers who want to start developing cBot for cTrader, a template that will increase over time. Significantly reduces development time by eliminating reperitive operations.",
+    "long_description": "<p>It has the capacity to add control of an encrypted license.</p>",
     "tags": ["template", "extension"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
