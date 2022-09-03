@@ -1,0 +1,32 @@
+{
+
+    "unique": "license-generator",
+    "name": "License Generator",
+    "short_description": "Generates a license that is used to enable the use of certain products. Fully customizable, easy to implement.",
+    "long_description": "<p>A concrete example can be found with the <a href='/index.html?repository=extend-cbot&category=cbots'>Extend cBot</a></p>",
+    "tags": ["template", "extension", "license"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": [],
+    "params": [{
+            "title": "License Generator x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Product",
+            "content": "The name of product, e.g. Trend Master"
+        },
+        {
+            "title": "Password",
+            "content": "Must match the password entered in your product"
+        },
+        {
+            "title": "Expire (*|2022.12.31 00:00:00)",
+            "content": "The expiration of the license, if you enter the asterisk (*) then it will be lifetime, otherwise follow the proposed example to indicate the exact date"
+        },
+        {
+            "title": "Allow Backtest?",
+            "content": "In some cases you may need to prevent backtesting or optimization, with this parameter you can control it"
+        }
+    ],
+    "twitter_changelog": "LicenseGenerator"
+}

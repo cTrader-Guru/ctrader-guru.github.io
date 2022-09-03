@@ -30,7 +30,8 @@
                 "money-break-even",
                 "price-action-trailing-stop",
                 "sar-trailing-stop",
-                "cbots-mega-pack"
+                "cbots-mega-pack",
+                "license-generator"
             ];
 
 
