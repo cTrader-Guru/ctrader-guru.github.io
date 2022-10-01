@@ -5,7 +5,7 @@
     "short_description": "The deviation indicator for excellence, in particular this indicator can also be adapted to closes, be careful though because it is a repaint.",
     "tags": ["deviation"],
     "img_3d_box": "3d-box.png",
-    "screenshots": ["1.png", "2.jpg"],
+    "screenshots": ["1.png", "2.png"],
     "params": [{
             "title": "Identity",
             "content": ""
@@ -33,6 +33,22 @@
         {
             "title": "BackStep",
             "content": "Adjust this value to your view"
+        },
+        {
+            "title": "Label",
+            "content": ""
+        },
+        {
+            "title": "Show",
+            "content": "You can choose whether to display the price label"
+        },
+        {
+            "title": "Color High",
+            "content": "You can choose the color of the highs"
+        },
+        {
+            "title": "Color Low",
+            "content": "You can choose the color of the lows"
         }
     ],
     "twitter_changelog": "ZigZag"
