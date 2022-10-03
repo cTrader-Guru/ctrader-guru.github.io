@@ -23,6 +23,10 @@
             "content": "You can choose between High/Low and Close"
         },
         {
+            "title": "Activation (pips)",
+            "content": "If it does not reach this limit, trailing is not activated"
+        },
+        {
             "title": "Period",
             "content": "The bar used to move the stop loss"
         }
