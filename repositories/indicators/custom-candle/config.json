@@ -20,11 +20,15 @@
         },
         {
             "title": "Candle TimeFrame",
-            "content": "La candela che vuoi disegnare, deve essere maggiore del timeframe corrente"
+            "content": "The candle you want to draw, must be greater than the current timeframe"
         },
         {
             "title": "Candle Mode",
-            "content": "Puoi sceglie per visualizzare solo Open/Close or High/Low"
+            "content": "You can choose to display only Open/Close or High/Low"
+        },
+        {
+            "title": "Fibonacci (high/low)",
+            "content": "You can choose whether to display Fibonacci, only with High/Low mode"
         },
         {
             "title": "Candle To Show",
