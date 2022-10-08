@@ -11,6 +11,10 @@
             "content": ""
         },
         {
+            "title": "Source",
+            "content": "You can choose which data to process the calculation with"
+        },
+        {
             "title": "Period",
             "content": "The number of candles to be used for averaging"
         },
