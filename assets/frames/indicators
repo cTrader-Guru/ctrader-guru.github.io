@@ -36,7 +36,8 @@
                 "scalfibo",
                 "trigger",
                 "marsi",
-                "envelopes"
+                "envelopes",
+                "amazing-moving-average"
 
             ];
 

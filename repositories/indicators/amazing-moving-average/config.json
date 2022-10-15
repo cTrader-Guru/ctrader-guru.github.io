@@ -1,0 +1,39 @@
+{
+
+    "unique": "amazing-moving-average",
+    "name": "Amazing Moving Average",
+    "short_description": "In addition to choosing the type of moving average you can also choose the type, deviation helps monitor laterality points.",
+    "tags": ["trend", "moving average", "colors"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png", "2.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Amazing Moving Average x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Source",
+            "content": "The source of the data needed to calculate the average"
+        },
+        {
+            "title": "Period",
+            "content": "The number of bars to be used to calculate the force index"
+        },
+        {
+            "title": "MA Type",
+            "content": "The type of moving average, Exponential; Simple;..."
+        },
+        {
+            "title": "Deviation",
+            "content": "The movement differential, is used to identify flat areas"
+        }
+    ],
+    "twitter_changelog": "AmazingMovingAverage"
+}
