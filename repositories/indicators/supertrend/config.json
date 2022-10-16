@@ -3,6 +3,7 @@
     "unique": "supertrend",
     "name": "SuperTrend",
     "short_description": "When it first came out it was successful because of its ease of interpretation, to this day it is the most popular indicator used by beginners.",
+    "long_description": "<p>We have included the ability to change the moving average, and we have changed the standard line now appears smooth and straight.</p>",
     "tags": ["trend following", "breakout"],
     "img_3d_box": "3d-box.png",
     "screenshots": ["1.png"],
@@ -25,6 +26,10 @@
         {
             "title": "Multiplier",
             "content": "The coefficient to better interpret the period"
+        },
+        {
+            "title": "MA Type",
+            "content": "You can choose which type of moving average to use, simple; exponential;..."
         },
         {
             "title": "Alert On Change",
