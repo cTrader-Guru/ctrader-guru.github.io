@@ -17,6 +17,12 @@
     <div class="content">
         <p>Yes, but only if you are a sponsor</p>
     </div>
+    <div class="title">
+        <i class="dropdown icon"></i> Is it possible to customize a project?
+    </div>
+    <div class="content">
+        <p>Yes, ask for a quote at <a href='mailto:ctrader.guru@gmail.com'>ctrader.guru@gmail.com</a> or via <a href='https://t.me/ctraderguru'>Telegram</a></p>
+    </div>
 </div>
 
 <script>
