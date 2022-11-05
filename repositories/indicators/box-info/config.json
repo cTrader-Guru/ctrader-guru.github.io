@@ -52,8 +52,8 @@
             "content": "You can choose whether or not to display the antimartingala next size"
         },
         {
-            "title": "Show Global Drawdown ?",
-            "content": "You can choose whether or not to display the global drawdown"
+            "title": "Show Equity % ?",
+            "content": "You can choose whether or not to display the equity percentage profit/loss"
         },
         {
             "title": "Styles",
