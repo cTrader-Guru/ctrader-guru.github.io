@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>Multi RSI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Fomantic and Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/multi-rsi.css" />
+
+
+</head>
+
+<body>
+
+    <div id="setup-container" class="ui row center aligned">
+
+        <div class="ui grid middle aligned">
+
+            <div class="column sixteen wide center aligned">
+
+                <div class="canvas-chart">
+                    <canvas id="Chart1m"></canvas>
+                </div>
+                <div class="canvas-chart">
+                    <canvas id="Chart5m"></canvas>
+                </div>
+                <div class="canvas-chart">
+                    <canvas id="Chart15m"></canvas>
+                </div>
+                <div class="canvas-chart">
+                    <canvas id="Chart30m"></canvas>
+                </div>
+                <div class="canvas-chart">
+                    <canvas id="Chart1h"></canvas>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fomantic JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var Chart1m, Chart5m, Chart15m, Chart30m, Chart1h;
+
+        function DrawChart(id, datapoints, label, datapoints_average, label_average, labels = []) {
+
+            const ctx = document.getElementById(id);
+
+            const DATA_COUNT = 11;
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'RSI' + label,
+                    data: datapoints,
+                    borderColor: 'rgb(54, 162, 135)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                }, {
+                    label: 'Average' + label_average,
+                    data: datapoints_average,
+                    borderColor: 'rgb(54, 162, 235)',
+                    borderWidth: 1,
+                    fill: false,
+                    tension: 0.4
+                }]
+            };
+
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    title: {
+                        display: false,
+                    },
+                    animation: false,
+                    responsive: true,
+                    elements: {
+                        point: {
+                            radius: 0
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                    },
+                    scales: {
+                        x: {
+                            display: false,
+                            title: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            display: false,
+                            title: {
+                                display: false,
+                                text: 'Value'
+                            },
+                            suggestedMin: -10,
+                            suggestedMax: 200
+                        }
+                    }
+                },
+            };
+
+            return new Chart(ctx, config);
+
+        }
+
+        function UpdateChart(chart, lastdata, lastmid) {
+
+            chart.data.datasets[0].data[10] = lastdata;
+            chart.data.datasets[1].data[10] = lastmid;
+            chart.update();
+
+        }
+
+        try {
+            Chart1m.destroy();
+        } catch (error) {
+
+        }
+        Chart1m = DrawChart('Chart1m', [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170],
+            ' ( 1m | 20)', [10, 20, 20, 60, 60, 120, 150, 120, 155, 105, 180, 170], ' (10)', ['11.12.1212 22:23', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
+        try {
+            Chart5m.destroy();
+        } catch (error) {
+
+        }
+        Chart5m = DrawChart('Chart5m', [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170],
+            ' ( 5m | 20)', [10, 20, 20, 60, 60, 120, 150, 120, 155, 105, 180, 170], ' (10)', ['11.12.1212 22:23', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
+        try {
+            Chart15m.destroy();
+        } catch (error) {
+
+        }
+        Chart15m = DrawChart('Chart15m', [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170],
+            ' ( 15m | 20)', [10, 20, 20, 60, 60, 120, 150, 120, 155, 105, 180, 170], ' (10)', ['11.12.1212 22:23', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
+        try {
+            Chart30m.destroy();
+        } catch (error) {
+
+        }
+        Chart30m = DrawChart('Chart30m', [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170],
+            ' ( 30m | 20)', [10, 20, 20, 60, 60, 120, 150, 120, 155, 105, 180, 170], ' (10)', ['11.12.1212 22:23', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
+        try {
+            Chart1h.destroy();
+        } catch (error) {
+
+        }
+        Chart1h = DrawChart('Chart1h', [0, 20, 20, 60, 60, 120, 180, 120, 125, 105, 110, 170],
+            ' ( 1h | 20)', [10, 20, 20, 60, 60, 120, 150, 120, 155, 105, 180, 170], ' (10)', ['11.12.1212 22:23', 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+    </script>
+
+</body>
+
+</html>

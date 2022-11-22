@@ -1,0 +1,17 @@
+html,
+body,
+#setup-container {
+    margin-top: 10px!important;
+    min-width: 300px!important;
+    background: transparent!important;
+    overflow: hidden!important;
+}
+
+#logo-zone {
+    padding: 3rem;
+}
+
+.canvas-chart {
+    width: 300px!important;
+    right: 0p;
+}
