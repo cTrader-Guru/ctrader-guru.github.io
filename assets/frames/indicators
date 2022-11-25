@@ -37,7 +37,8 @@
                 "trigger",
                 "marsi",
                 "envelopes",
-                "amazing-moving-average"
+                "amazing-moving-average",
+                "risk-calculator"
 
             ];
 

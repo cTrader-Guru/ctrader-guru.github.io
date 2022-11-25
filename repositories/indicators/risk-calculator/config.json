@@ -1,0 +1,47 @@
+{
+
+    "unique": "risk-calculator",
+    "name": "Risk Calculator",
+    "short_description": "Simple but very useful tool for calculating the most common proportions.",
+    "tags": ["calculator", "risk"],
+    "img_3d_box": "3d-box.png",
+    "screenshots": ["1.png"],
+    "params": [{
+            "title": "Identity",
+            "content": ""
+        },
+        {
+            "title": "Risk Calculator x.x.x.",
+            "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "Params",
+            "content": ""
+        },
+        {
+            "title": "Capital",
+            "content": "The basis for risk calculation, you can choose between Balance or Equity"
+        },
+        {
+            "title": "Pips Risk",
+            "content": "The number of pips to be considered when calculating risk"
+        },
+        {
+            "title": "Styles",
+            "content": ""
+        },
+        {
+            "title": "Color",
+            "content": "The color of the information box"
+        },
+        {
+            "title": "Vertical Position",
+            "content": "The vertical position of the information box"
+        },
+        {
+            "title": "Horizontal Position",
+            "content": "The horizontal position of the information box"
+        }
+    ],
+    "twitter_changelog": "RiskCalculator"
+}
