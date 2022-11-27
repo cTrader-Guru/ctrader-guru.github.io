@@ -27,17 +27,14 @@
 
             <div class="column sixteen wide right aligned">
 
-                <div class="canvas-chart">
-                    <canvas id="Chart1m"></canvas>
+                <div class="canvas-chart" style="width:400px!important;">
+                    <canvas id="Chart1"></canvas>
                 </div>
-                <div class="canvas-chart">
-                    <canvas id="Chart5m"></canvas>
+                <div class="canvas-chart" style="width:400px!important;">
+                    <canvas id="Chart2"></canvas>
                 </div>
-                <div class="canvas-chart">
-                    <canvas id="Chart15m"></canvas>
-                </div>
-                <div class="canvas-chart">
-                    <canvas id="Chart30m"></canvas>
+                <div class="canvas-chart" style="width:400px!important;">
+                    <canvas id="Chart3"></canvas>
                 </div>
 
             </div>
@@ -54,7 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
-        var Chart1m, Chart5m, Chart15m, Chart30m, Chart1h;
+        var Chart1, Chart2, Chart3;
 
         function DrawChart(id, datapoints, label, datapoints_average, label_average, labels = [], colordp = 'rgb(54, 162, 135)', colordpa = 'rgb(54, 162, 235)') {
 
@@ -89,6 +86,7 @@
                     },
                     animation: true,
                     responsive: true,
+                    maintainAspectRatio: true,
                     elements: {
                         point: {
                             radius: 0
@@ -132,10 +130,13 @@
             chart.update();
 
         }
+
         /*
-                Chart1m = DrawChart('Chart1m', [1, 2, 3, 4, 5], ' (  | )', [11, 12, 13, 14, 15], ' ()', [1, 2, 3, 4, 5]);
-                Chart5m = DrawChart('Chart5m', [1, 2, 3, 4, 5], ' (  | )', [11, 12, 13, 14, 15], ' ()', [1, 2, 3, 4, 5]);
-                */
+        Chart1 = DrawChart('Chart1', [1, 2, 3, 4, 5], ' (  | )', [11, 12, 13, 14, 15], ' ()', [1, 2, 3, 4, 5]);
+        Chart2 = DrawChart('Chart2', [1, 2, 3, 4, 5], ' (  | )', [11, 12, 13, 14, 15], ' ()', [1, 2, 3, 4, 5]);
+        */
+
+        // --> window.chrome.webview.postMessage("Ciao");
     </script>
 
 </body>
