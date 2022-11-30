@@ -6,6 +6,7 @@
     "long_description": "<p>It has the capacity to add control of an encrypted license. Use <a href='/index.html?repository=license-generator&category=cbots'>this generator</a> for license</p>",
     "tags": ["template", "extension", "license"],
     "img_3d_box": "3d-box.png",
+    "youtube": ["p4vzQHwbT3w"],
     "screenshots": [],
     "params": [{
             "title": "Identity",

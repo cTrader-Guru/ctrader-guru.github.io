@@ -6,6 +6,7 @@
     "long_description": "<p>A concrete example can be found with the <a href='/index.html?repository=extend-cbot&category=cbots'>Extend cBot</a></p>",
     "tags": ["template", "extension", "license"],
     "img_3d_box": "3d-box.png",
+    "youtube": ["p4vzQHwbT3w"],
     "screenshots": [],
     "params": [{
             "title": "License Generator x.x.x.",
