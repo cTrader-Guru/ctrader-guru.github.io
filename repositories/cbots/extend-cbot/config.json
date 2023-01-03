@@ -73,6 +73,10 @@
             "content": "Marks the end of the pause, e.g. 8.20 the cBot will start opening new trades from 08:20"
         },
         {
+            "title": "Close All From (zero = disabled)",
+            "content": "You can set a time, following the logic previously described in 'From' and 'To', beyond which it will close all positions, if the value is equal to zero then this function will be disabled"
+        },
+        {
             "title": "Filters",
             "content": ""
         },
