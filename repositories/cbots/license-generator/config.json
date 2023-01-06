@@ -13,6 +13,10 @@
             "content": "The name, version, and link to find references for this tool"
         },
         {
+            "title": "UserID (zero = universal)",
+            "content": "Enter the userid or zero if you want to generate the license for any userid"
+        },
+        {
             "title": "Product",
             "content": "The name of product, e.g. Trend Master"
         },
