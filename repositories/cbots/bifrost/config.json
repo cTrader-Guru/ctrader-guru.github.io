@@ -2,9 +2,9 @@
 
     "unique": "bifrost",
     "name": "Bifrost",
-    "short_description": "The first copy trading infrastructure that links cTrader/MT4/MT5, totally free but not open source (for now). Become a Sponsor if you want this project to become open source, support us.",
+    "short_description": "The first mirror trading infrastructure that links cTrader / MT4 / MT5, totally free but not open source (for now). Become a Sponsor if you want this project to become open source, support us.",
     "long_description": "<p>This project can be customized, ask for a quote at <a href='mailto:ctrader.guru@gmail.com'>ctrader.guru@gmail.com</a> or via <a href='https://t.me/ctraderguru'>Telegram</a></p><p>Only those who open an account with: <ul> <li><a href='https://icmarkets.com/trading-accounts/overview/?camp=22482' target='blank'><strong>IcMarkets</strong></a></li><li><a href='https://signup.topfx.com.sc/Registration/Main/Account?dest=live&camp=1167' id='referal_link' target='blank'><strong>TopFX</strong></a></li></ul> can get the free user license, if you already have an IcMarkets account ask to pass all your profile under my <strong>IB code 22482</strong> or TopFX with <strong>IB code 1167</strong></p>",
-    "tags": ["metatrader", "mt4", "mt5", "copy trading", "zeromq", "without source"],
+    "tags": ["metatrader", "mt4", "mt5", "copy trading", "mirror trading", "zeromq", "without source"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
     "youtube": ["Y3CV074hQTU"],
