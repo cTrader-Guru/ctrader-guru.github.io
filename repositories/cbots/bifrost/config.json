@@ -21,6 +21,10 @@
             "content": "The name, version, and link to find references for this tool"
         },
         {
+            "title": "License",
+            "content": "Here you can enter the license that was provided to you for activation"
+        },
+        {
             "title": "Session",
             "content": ""
         },
@@ -71,6 +75,10 @@
         {
             "title": "Bifrost Copyer x.x.x.",
             "content": "The name, version, and link to find references for this tool"
+        },
+        {
+            "title": "License",
+            "content": "Here you can enter the license that was provided to you for activation"
         },
         {
             "title": "Session",
