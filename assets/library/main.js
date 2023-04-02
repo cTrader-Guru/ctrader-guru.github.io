@@ -37,7 +37,7 @@
             .modal('show');
 
     });
-
+    /* --> Google Adsense
     $(".todownload, .togithub").click(function(ev) {
 
         // --> At least one banner you must display
@@ -50,7 +50,7 @@
         }
 
     });
-
+    */
     // --> Search with case insensitive
     jQuery.expr[':'].contains = function(a, i, m) {
         return jQuery(a).text().toUpperCase()
