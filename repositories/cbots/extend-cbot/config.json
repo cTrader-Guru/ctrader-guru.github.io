@@ -183,6 +183,30 @@
         {
             "title": "Max Consecutive Loss (zero = infinite)",
             "content": "If the value of this parameter is equal to zero then it will open an unlimited number of consecutive losing trades, otherwise if it is greater than zero e.g. 3 it would mean that it will get a maximum of 3 consecutive losses"
+        },
+        {
+            "title": "Telegram",
+            "content": ""
+        },
+        {
+            "title": "Enabled?",
+            "content": "Enable the module of sending notifications on Telegram"
+        },
+        {
+            "title": "API Token",
+            "content": "Your Telegram Bot Token"
+        },
+        {
+            "title": "Chat IDs (separate by comma)",
+            "content": "You can enter multiple chat_ids just separate them by a comma"
+        },
+        {
+            "title": "Send on Open",
+            "content": "Enable if you want to send a notification every time it opens a trade"
+        },
+        {
+            "title": "Send on Close",
+            "content": "Enable if you want to send a notification every time it closes a trade"
         }
     ],
     "twitter_changelog": "ExtendCbot"
