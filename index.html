@@ -240,6 +240,34 @@
     <script src="/assets/library/ctrader-guru.js"></script>
     <script src="/assets/library/populate-list.js"></script>
     <script src="/assets/library/main.js"></script>
+    
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+          w["chatsonic_widget"] = o;
+          w[o] =
+            w[o] ||
+            function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "ws", "https://writesonic.s3.amazonaws.com/frontend-assets/CDN/chatsonic.js");
+        ws("init", {
+          botId: "5dc9f259-3933-4006-89c8-ccade3aaa376",
+          username: "",
+          customTitle: "cTrader Guru",
+          customIcon: "https://botsonic.s3.amazonaws.com/375969a3-ab10-445c-a8bf-5bdb6dfbfc12.png",
+          chatBotColor: "#000000",
+          chatBotAvatarURL: "https://botsonic.s3.amazonaws.com/ae51c23a-f5e4-4a1d-9f84-9976044732bf.png",
+          welcomeMessage:"Hi, how can I help you?",
+          serviceBaseUrl: "https://api.writesonic.com",
+          token: "15250b06-f82d-4736-9494-8a767523ed66",
+        });
+      </script>
+
 </body>
 
 </html>
