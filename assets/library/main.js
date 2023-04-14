@@ -56,7 +56,7 @@
         return jQuery(a).text().toUpperCase()
             .indexOf(m[3].toUpperCase()) >= 0;
     };
-
+    /*
     const
         IsNotLocalhost = location.hostname != '127.0.0.1' && location.hostname != 'localhost',
         RomeTZ = CG.ConvertTZ(new Date, "Europe/Rome"),
@@ -73,5 +73,6 @@
         $("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
 
     console.log("Today in Rome is the " + RomeTZ.getDay() + "° day of the week and now is " + CurrentRomeTime + ", the operator work in days " + OperatorDayWork.join('/') + " from " + OperatorStart + " to " + OperatorStop + ", then now is " + (IsOperatorDayWork && IsOperatorTimeWork ? "active." : "inactive."));
-
+    */$("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
+    
 })(jQuery);
