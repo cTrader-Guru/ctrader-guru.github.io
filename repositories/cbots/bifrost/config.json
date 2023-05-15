@@ -97,6 +97,14 @@
             "content": "You can change the trade destination, used for related pairs, for example I would like to be able to open a trade for GBPUSD with the EURUSD trigger"
         },
         {
+            "title": "Copy StopLoss and TakeProfit?",
+            "content": "This option enables/disables the copying of StopLoss and TakeProfit"
+        },
+        {
+            "title": "Reverse Logic? (if Buy open Sell, if Sell open Buy, without SL/TP)",
+            "content": "This option enables/disables reverse logic"
+        },
+        {
             "title": "Money Management",
             "content": ""
         },
