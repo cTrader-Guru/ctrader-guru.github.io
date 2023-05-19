@@ -29,10 +29,6 @@
         {
             "title": "MA Type",
             "content": "The type of moving average, Exponential; Simple;..."
-        },
-        {
-            "title": "Deviation",
-            "content": "The movement differential, is used to identify flat areas"
         }
     ],
     "twitter_changelog": "AmazingMovingAverage"
