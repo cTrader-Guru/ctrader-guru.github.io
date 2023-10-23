@@ -37,7 +37,8 @@
             .modal('show');
 
     });
-    /* --> Google Adsense
+
+    // --> Google Adsense
     $(".todownload, .togithub").click(function(ev) {
 
         // --> At least one banner you must display
@@ -50,7 +51,7 @@
         }
 
     });
-    */
+    
     // --> Search with case insensitive
     jQuery.expr[':'].contains = function(a, i, m) {
         return jQuery(a).text().toUpperCase()
@@ -73,6 +74,8 @@
         $("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
 
     console.log("Today in Rome is the " + RomeTZ.getDay() + "° day of the week and now is " + CurrentRomeTime + ", the operator work in days " + OperatorDayWork.join('/') + " from " + OperatorStart + " to " + OperatorStop + ", then now is " + (IsOperatorDayWork && IsOperatorTimeWork ? "active." : "inactive."));
-    */$("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
+    */
+   
+   // --> $("<script src='https://code.jivo.ru/widget/vJVgRN5kgV' async></script>").appendTo('body');
     
 })(jQuery);

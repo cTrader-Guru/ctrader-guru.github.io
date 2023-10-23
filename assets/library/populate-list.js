@@ -227,8 +227,8 @@ window.CG.Populate = window.CG.Populate || function(MAIN, TAB, GITHUB_REPOS) {
                         });
 
                         _installComments();
-                        // --> _installAdSenseRepo();
-                        // --> _installAdSenseRepo2();
+                        _installAdSenseRepo();
+                        _installAdSenseRepo2();
 
                         $('#sJZ3vntth').html('');
 
