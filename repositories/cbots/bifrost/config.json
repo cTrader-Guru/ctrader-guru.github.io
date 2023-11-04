@@ -3,7 +3,7 @@
     "unique": "bifrost",
     "name": "Bifrost",
     "short_description": "Bifrost is a mirror trading software that allows you to copy trades between MT4 / MT5 / cTrader in any possible combination. The mirror trading structure is reliable and functional. The only limitations are the lack of partial closing and copying of pending orders, limitations that do not affect once the trade is opened.👍",
-    "long_description": "<p>This project can be customized, ask for a quote at <a href='mailto:ctrader.guru@gmail.com'>ctrader.guru@gmail.com</a> or via <a href='https://t.me/ctraderguru'>Telegram</a></p><p>The annual license is €70 (€73 PayPal)</p>",
+    "long_description": "<p>This project can be customized, ask for a quote at <a href='mailto:ctrader.guru@gmail.com'>ctrader.guru@gmail.com</a> or via <a href='https://t.me/ctraderguru'>Telegram</a></p><p>The annual license is €70 (€73 PayPal)</p><p>Sometimes a 'Technical Error' error appears because the stoploss or takeprofit are too narrow and on different types of accounts, for example ECN, they cause this error. To resolve this problem, simply select the 'Copy Stoploss and Takeprofit?' option. and set it to 'false'</p>",
     "tags": ["metatrader", "mt4", "mt5", "copy trading", "mirror trading", "zeromq", "without source"],
     "img_3d_box": "3d-box.png",
     "screenshots": [],
