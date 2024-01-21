@@ -1,6 +1,6 @@
 <div id="signals-items" class="ui unstackable items">
 
-    <div class="ui placeholder segment signals">
+    <div class="ui placeholder segment signals" style="box-shadow: none!important;">
         <div class="ui two column very relaxed stackable grid">
             <div class="center aligned column">
                 <h3 class="ui icon header intesta">
