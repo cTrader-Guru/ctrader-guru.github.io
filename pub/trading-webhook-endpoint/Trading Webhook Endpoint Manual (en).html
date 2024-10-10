@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file en</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="user-manual-trading-webhook-endpoint">User Manual: Trading Webhook Endpoint</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#cbot-parameters">cBot Parameters</a></li>
+<li><a href="#server-configuration">Server Configuration</a></li>
+<li><a href="#http-commands">HTTP Commands</a></li>
+<li><a href="#usage-examples">Usage Examples</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>The Trading Webhook Endpoint is a powerful cBot for cTrader that allows you to execute trading operations via HTTP requests. This tool is ideal for integrating automated trading strategies, external signals, or controlling your trading from third-party platforms like TradingView.</p>
+<h2 id="cbot-parameters">cBot Parameters</h2>
+<h3 id="identity-section">“Identity” Section</h3>
+<ol>
+<li>
+<p><strong>Product Info</strong>: Product information (default: <a href="https://ctrader.guru/">https://ctrader.guru/</a>)</p>
+<ul>
+<li>This field displays product information and cannot be modified.</li>
+</ul>
+</li>
+<li>
+<p><strong>Label</strong>: Label to identify operations (default: TWE)</p>
+<ul>
+<li>Used to label operations opened by the cBot. If left empty, “TWE” will be used.</li>
+<li>Accepts only alphanumeric characters.</li>
+</ul>
+</li>
+<li>
+<p><strong>License</strong>: Product license key</p>
+<ul>
+<li>Enter your license key here to activate the cBot.</li>
+</ul>
+</li>
+</ol>
+<h3 id="server-section">“Server” Section</h3>
+<ol start="4">
+<li><strong>Address</strong>: Server address (default: <a href="http://0.0.0.0">http://0.0.0.0</a>)
+<ul>
+<li>Specifies the IP address and port on which the webhook server will listen for requests.</li>
+<li>Format: http://[IP address]:[port]</li>
+<li>IMPORTANT: The listening address is that of the PC running cTrader with the cBot.</li>
+</ul>
+</li>
+</ol>
+<h3 id="api-section">“API” Section</h3>
+<ol start="5">
+<li>
+<p><strong>Key</strong>: API key to authenticate requests (default: webhook)</p>
+<ul>
+<li>This key will be used in the URL of HTTP requests to authenticate webhook calls.</li>
+<li>Accepts only alphanumeric characters.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interprets parameters as strings</strong>: Interpret parameters as strings (default: false)</p>
+<ul>
+<li>If set to true, numeric parameters will be interpreted as strings, similar to TradingView’s behavior.</li>
+</ul>
+</li>
+</ol>
+<h3 id="symbols-section">“Symbols” Section</h3>
+<ol start="7">
+<li>
+<p><strong>Prefix</strong>: Prefix to add to symbols</p>
+<ul>
+<li>If your broker uses prefixes for symbols, enter them here.</li>
+</ul>
+</li>
+<li>
+<p><strong>Suffix</strong>: Suffix to add to symbols</p>
+<ul>
+<li>If your broker uses suffixes for symbols, enter them here.</li>
+</ul>
+</li>
+</ol>
+<h2 id="server-configuration">Server Configuration</h2>
+<p>Once started, the cBot will create a webhook server at the address specified in the “Address” parameter. HTTP requests must be sent to this address, using the specified API key.</p>
+<h3 id="important-network-configuration">Important: Network Configuration</h3>
+<p>To make the webhook server accessible from the Internet, you need to properly configure your network:</p>
+<ol>
+<li>
+<p><strong>Port Forwarding</strong>: You need to configure port forwarding on your router for port 80 (HTTP). This operation will forward incoming requests on port 80 to the PC running cTrader with the cBot.</p>
+</li>
+<li>
+<p><strong>IP Address</strong>:</p>
+<ul>
+<li>If you have a static public IP address, you can use it directly.</li>
+<li>If the IP address is dynamic (changes periodically), it is recommended to use a DDNS (Dynamic DNS) service such as No-IP. These services provide a domain name that automatically updates when the IP address changes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security</strong>: Make sure to use a robust API key and keep your operating system and cTrader updated to ensure the security of the webhook server.</p>
+</li>
+</ol>
+<p>Example of webhook URL:</p>
+<pre><code>http://[your-noip-domain].ddns.net/[API Key]
+</code></pre>
+<p>or</p>
+<pre><code>http://[your-public-ip]/[API Key]
+</code></pre>
+<p>NOTE: The cBot uses port 80 (HTTP) by default. Other ports are not supported to ensure maximum compatibility and simplicity of configuration.</p>
+<h2 id="http-commands">HTTP Commands</h2>
+<p>The Trading Webhook Endpoint accepts POST requests with JSON payload. Here are the available commands:</p>
+<ol>
+<li><strong>buy</strong>: Opens a long position</li>
+<li><strong>sell</strong>: Opens a short position</li>
+<li><strong>close</strong>: Closes a specific position or all positions</li>
+<li><strong>edit</strong>: Modifies the stop loss or take profit of a position</li>
+<li><strong>tp1</strong>: Closes 1/3 of the position</li>
+<li><strong>tp2</strong>: Closes 1/2 of the remaining position</li>
+<li><strong>tp3</strong>: Completely closes the position</li>
+<li><strong>closeBuy</strong>: Closes all long positions</li>
+<li><strong>closeSell</strong>: Closes all short positions</li>
+</ol>
+<h3 id="json-payload-structure">JSON Payload Structure</h3>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+  <span class="token string">"command"</span><span class="token punctuation">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+  <span class="token string">"id"</span><span class="token punctuation">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+  <span class="token string">"symbol"</span><span class="token punctuation">:</span> <span class="token string">"string"</span><span class="token punctuation">,</span>
+  <span class="token string">"volume"</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span>
+  <span class="token string">"lots"</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span>
+  <span class="token string">"slPrice"</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span>
+  <span class="token string">"tpPrice"</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span>
+  <span class="token string">"slPips"</span><span class="token punctuation">:</span> number<span class="token punctuation">,</span>
+  <span class="token string">"tpPips"</span><span class="token punctuation">:</span> number
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li><strong>command</strong>: The command to execute (required)</li>
+<li><strong>id</strong>: Unique identifier for the position (optional)</li>
+<li><strong>symbol</strong>: The symbol to operate on (required for opening positions)</li>
+<li><strong>volume</strong>: Volume in units (alternative to lots)</li>
+<li><strong>lots</strong>: Volume in lots (alternative to volume)</li>
+<li><strong>slPrice</strong>: Stop loss price</li>
+<li><strong>tpPrice</strong>: Take profit price</li>
+<li><strong>slPips</strong>: Stop loss in pips</li>
+<li><strong>tpPips</strong>: Take profit in pips</li>
+</ul>
+<h2 id="usage-examples">Usage Examples</h2>
+<h3 id="opening-a-long-position">Opening a long position</h3>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+  <span class="token string">"command"</span><span class="token punctuation">:</span> <span class="token string">"buy"</span><span class="token punctuation">,</span>
+  <span class="token string">"symbol"</span><span class="token punctuation">:</span> <span class="token string">"EURUSD"</span><span class="token punctuation">,</span>
+  <span class="token string">"volume"</span><span class="token punctuation">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+  <span class="token string">"slPips"</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+  <span class="token string">"tpPips"</span><span class="token punctuation">:</span> <span class="token number">50</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="closing-a-specific-position">Closing a specific position</h3>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+  <span class="token string">"command"</span><span class="token punctuation">:</span> <span class="token string">"close"</span><span class="token punctuation">,</span>
+  <span class="token string">"id"</span><span class="token punctuation">:</span> <span class="token string">"12345"</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="modifying-stop-loss-and-take-profit">Modifying stop loss and take profit</h3>
+<pre class=" language-json"><code class="prism  language-json"><span class="token punctuation">{</span>
+  <span class="token string">"command"</span><span class="token punctuation">:</span> <span class="token string">"edit"</span><span class="token punctuation">,</span>
+  <span class="token string">"id"</span><span class="token punctuation">:</span> <span class="token string">"12345"</span><span class="token punctuation">,</span>
+  <span class="token string">"slPrice"</span><span class="token punctuation">:</span> <span class="token number">1.0850</span><span class="token punctuation">,</span>
+  <span class="token string">"tpPrice"</span><span class="token punctuation">:</span> <span class="token number">1.0950</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ol>
+<li>
+<p><strong>The server doesn’t start</strong>: Verify that the specified IP address and port are correct and not in use by other applications.</p>
+</li>
+<li>
+<p><strong>Requests are rejected</strong>: Make sure you’re using the correct API key in the webhook URL.</p>
+</li>
+<li>
+<p><strong>Symbols are not recognized</strong>: Check that you have correctly set the symbol prefixes and suffixes, if necessary for your broker.</p>
+</li>
+<li>
+<p><strong>Operations are not executed</strong>: Verify that the cBot has the necessary permissions in your cTrader account and that there is sufficient margin available.</p>
+</li>
+<li>
+<p><strong>I can’t access the webhook from the Internet</strong>:</p>
+<ul>
+<li>Verify that port forwarding is correctly configured on your router.</li>
+<li>Make sure your PC’s firewall is not blocking incoming connections on port 80.</li>
+<li>If you’re using a DDNS service, check that your IP address has been updated correctly.</li>
+</ul>
+</li>
+</ol>
+<p>For further assistance, don’t hesitate to contact support at <a href="https://ctrader.guru/">https://ctrader.guru/</a>.</p>
+</div>
+</body>
+
+</html>
