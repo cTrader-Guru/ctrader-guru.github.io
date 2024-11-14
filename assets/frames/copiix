@@ -1,0 +1,105 @@
+<style>
+    .custom-header {
+        text-align: center;
+        padding: 3rem 0;
+        background: transparent;
+        color: rgb(0, 0, 0);
+    }
+
+    .logo-container {
+        margin: 2rem auto;
+    }
+
+    .feature-boxes {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .feature-box {
+        background: rgba(233, 121, 93, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        flex: 0 1 300px;
+    }
+
+    .platform-list {
+        margin: 2rem 0;
+    }
+
+    .platform-item {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.7rem 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+
+    .platform-item:hover {
+        transform: scale(1.05);
+    }
+
+    .benefits {
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+
+    .ui.statistic.mine {
+        justify-content: center !important;
+    }
+</style>
+<div class="custom-header">
+    <div class="ui container">
+        <div class="logo-container">
+            <img src="/assets/images/Copiix.png" alt="Copiix Logo" class="ui image centered small circular">
+        </div>
+
+        <h1 class="ui huge header">
+            Copiix | Copy Trading
+            <div class="sub header">
+                Copy trades locally or remotely <div class="ui teal horizontal label">100% Free</div>
+            </div>
+        </h1>
+
+        <div class="feature-boxes">
+            <div class="feature-box">
+                <i class="ui huge desktop icon green"></i>
+                <h3>Local Copy</h3>
+                <p>Copy trades directly on your machine with zero latency</p>
+            </div>
+            <div class="feature-box">
+                <i class="ui huge cloud icon blue"></i>
+                <h3>Remote Copy</h3>
+                <p>Replicate trades across multiple remote accounts seamlessly</p>
+            </div>
+        </div>
+
+        <div class="platform-list">
+            <div class="platform-item">
+                <i class="ui chart line icon"></i> cTrader
+            </div>
+            <div class="platform-item">
+                <i class="ui chart bar icon"></i> MetaTrader 4
+            </div>
+            <div class="platform-item">
+                <i class="ui chart area icon"></i> MetaTrader 5
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <a href="https://copiix.com/" class="ui huge primary button animated fade">
+                <div class="visible content">START COPY TRADING</div>
+                <div class="hidden content">It's Free!</div>
+            </a>
+        </div>
+
+        <div class="ui text container" style="margin-top: 2rem;color:gray">
+            <p>Experience the most advanced copy trading solution. Copy trades locally with zero latency or remotely
+                across multiple accounts. Compatible with cTrader, MetaTrader 4, and MetaTrader 5.</p>
+        </div>
+    </div>
+</div>
