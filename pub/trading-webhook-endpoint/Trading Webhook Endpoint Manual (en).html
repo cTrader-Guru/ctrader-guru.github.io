@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trading Webhook Endpoint (en)</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body class="stackedit">
@@ -216,6 +217,44 @@
         </ul>
       </li>
     </ol>
+    <h2 id="firewall">VPS (Enable Port 80)</h2>
+    <ol>
+      <li>
+        <p><strong>Access the Control Panel</strong>: From the Windows Start menu, open the <em>Control Panel</em>.</p>
+      </li>
+      <li>
+        <p><strong>Open Windows Firewall</strong>: Select <em>Windows Firewall</em> and click on <em>Advanced
+            settings</em>
+          in the left column.</p>
+      </li>
+      <li>
+        <p><strong>Create a new rule</strong>:</p>
+        <ul>
+          <li>Select <em>Inbound Rules</em> from the left column.</li>
+          <li>Click <em>New Rule</em> in the right column.</li>
+          <li>In the wizard, choose <em>Port</em> and click <em>Next</em>.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Configure the rule parameters</strong>:</p>
+        <ul>
+          <li>Select <em>TCP</em> and enter <code>80</code> as the specific local port, then click <em>Next</em>.</li>
+          <li>Choose <em>Allow the connection</em> and click <em>Next</em>.</li>
+          <li>Select to apply the rule to all profiles (<em>Domain</em>, <em>Private</em>, and <em>Public</em>), then
+            click
+            <em>Next</em>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Finish the configuration</strong>: Name the rule (e.g., "Enable Port 80") and click <em>Finish</em>.
+        </p>
+      </li>
+      <li>
+        <p><strong>Verify</strong>: Ensure that Port 80 is now open and accessible for your software.</p>
+      </li>
+    </ol>
+
     <p>For further assistance, don’t hesitate to contact support at <a
         href="https://ctrader.guru/">https://ctrader.guru/</a>.</p>
     <p>Download: <a href="https://ctrader.guru/pub/trading-webhook-endpoint/Trading%20Webhook%20Endpoint.algo">Trading

@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trading Webhook Endpoint (it)</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body class="stackedit">
@@ -221,6 +222,46 @@
         </ul>
       </li>
     </ol>
+    <h2 id="firewall">VPS (Abilitare la Porta 80)</h2>
+    <ol>
+      <li>
+        <p><strong>Accedere al Pannello di controllo</strong>: Dal menu Start di Windows, apri il <em>Pannello di
+            controllo</em>.</p>
+      </li>
+      <li>
+        <p><strong>Aprire Windows Firewall</strong>: Seleziona <em>Windows Firewall</em> e clicca su <em>Impostazioni
+            avanzate</em> nella colonna sinistra.</p>
+      </li>
+      <li>
+        <p><strong>Creare una nuova regola</strong>:</p>
+        <ul>
+          <li>Seleziona <em>Regole in entrata</em> dalla colonna sinistra.</li>
+          <li>Clicca su <em>Nuova regola</em> nella colonna destra.</li>
+          <li>Nel wizard, scegli <em>Porta</em> e clicca <em>Avanti</em>.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Configurare i parametri della regola</strong>:</p>
+        <ul>
+          <li>Seleziona <em>TCP</em> e inserisci <code>80</code> come porta specifica locale, quindi clicca
+            <em>Avanti</em>.
+          </li>
+          <li>Seleziona <em>Consenti la connessione</em> e clicca <em>Avanti</em>.</li>
+          <li>Scegli di applicare la regola a tutti i profili (<em>Dominio</em>, <em>Privato</em> e <em>Pubblico</em>),
+            quindi clicca <em>Avanti</em>.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Completare la configurazione</strong>: Dai un nome alla regola (ad esempio, "Abilita Porta 80") e
+          clicca
+          <em>Fine</em>.
+        </p>
+      </li>
+      <li>
+        <p><strong>Verifica</strong>: Controlla che la porta 80 sia ora aperta e accessibile per il tuo software.</p>
+      </li>
+    </ol>
+
     <p>Per ulteriore assistenza, non esitare a contattare il supporto su <a
         href="https://ctrader.guru/">https://ctrader.guru/</a>.</p>
     <p>Download: <a href="https://ctrader.guru/pub/trading-webhook-endpoint/Trading%20Webhook%20Endpoint.algo">Trading
